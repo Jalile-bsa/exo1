@@ -1,0 +1,946 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/templates/cgs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/template.css">
+	<script src="/templates/cgs/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/wow.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/jquery.dataTables.min" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+	<script src="/templates/cgs/js/app.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<base href="http://www.cgs-dz.org/index.php/fr/2-francais/non-categorise/59-galerie-photos" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Centre National de Recherche Appliquée en Génie Parasismique (CGS)" />
+	<meta name="description" content="Centre National de Recherche Appliquée en Génie Parasismique" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Galerie Photos</title>
+	<link href="/media/djextensions/magnific/magnific.css" rel="stylesheet" type="text/css" />
+	<link href="/media/djmediatools/css/galleryGrid_500172e2e5f3f1e2866fb2012e1259a6.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<link href="/media/mod_languages/css/template.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"e58d774781b8ee9c9c12552cde966f1c","system.paths":{"root":"","base":""},"system.keepalive":{"interval":840000,"uri":"\/index.php\/fr\/component\/ajax\/?format=json"}}</script>
+	<script src="/media/jui/js/jquery.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/djextensions/magnific/magnific.js" type="text/javascript" defer="defer"></script>
+	<script src="/components/com_djmediatools/assets/js/magnific-init.js" type="text/javascript" defer="defer"></script>
+	<script src="/media/djextensions/picturefill/picturefill.min.js" type="text/javascript" defer="defer"></script>
+	<script src="/media/djextensions/jquery-easing/jquery.easing.min.js" type="text/javascript" defer="defer"></script>
+	<script src="/components/com_djmediatools/layouts/galleryGrid/js/galleryGrid.js?v=2.8.0" type="text/javascript" defer="defer"></script>
+	<script src="/media/system/js/caption.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script><![endif]-->
+	<script src="/media/system/js/keepalive.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function(){ if(!this.DJGalleryGrid1p) this.DJGalleryGrid1p = new DJImageGalleryGrid('dj-galleryGrid1p',{transition: 'easeInOutExpo',css3transition: 'cubic-bezier(1.000, 0.000, 0.000, 1.000)',duration: 200,delay: 50,effect: 'left',desc_effect: '',width: 300,height: 300,spacing: 20,preload: 0}) });jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+	</script>
+
+</head>
+
+
+<body id="default">
+
+<div class="training">
+<a href="/index.php/fr/formations">Formations</a>
+</div>
+
+	<!-- Modal Login-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Connexion</h4>
+				</div>
+				<div class="modal-body">
+					<form action="/index.php/fr/" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-user hasTooltip" title="Identifiant"></span>
+							<label for="modlgn-username" class="element-invisible">Identifiant</label>
+						</span>
+						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Identifiant" />
+					</div>
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-lock hasTooltip" title="Mot de passe">
+							</span>
+								<label for="modlgn-passwd" class="element-invisible">Mot de passe							</label>
+						</span>
+						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Mot de passe" />
+					</div>
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Se souvenir de moi</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Connexion</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+							<li>
+					<a href="/index.php/fr/component/users/?view=registration&amp;Itemid=101">
+					Créer un compte <span class="icon-arrow-right"></span></a>
+				</li>
+							<li>
+					<a href="/index.php/fr/component/users/?view=remind&amp;Itemid=101">
+					Identifiant oublié ?</a>
+				</li>
+				<li>
+					<a href="/index.php/fr/component/users/?view=reset&amp;Itemid=101">
+					Mot de passe oublié ?</a>
+				</li>
+			</ul>
+		<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aHR0cDovL3d3dy5jZ3MtZHoub3JnL2luZGV4LnBocC9mci8yLWZyYW5jYWlzL25vbi1jYXRlZ29yaXNlLzU5LWdhbGVyaWUtcGhvdG9z" />
+		<input type="hidden" name="e58d774781b8ee9c9c12552cde966f1c" value="1" />	</div>
+	</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Demande -->
+	<div class="modal fade" id="demande-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Demandez</h4>
+				</div>
+				<div class="modal-body ">
+					<p>Pour effectuer une demande  il faut avoir un compte validé  sur notre site</p><a class='link' href='index.php?option=com_users&view=registration' ><b>Créer un compte</b></a><br/><a class='link' href='index.php?option=com_users&view=login' ><b>Connexion</b></a>				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll"><a href="#" class="ion-arrow-up-b"></a></div>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<!---->
+						<ul class="lang-site">
+							<li><a href="#" >E</a></li>
+							<li><a href="#" >ا</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-9">
+						<div class="content-header ">
+							<div class="rechercher">
+								<div class="rechercher-btn">
+									<i class="ion-ios-search"></i>
+									<div class="rechercher-form">
+
+
+
+										<form method="post" action="" class="rechercher-form-j">
+											<input id="search-searchword" type="text" name="searchword" placeholder="Rechercher"  value="">
+											<input type="hidden" name="task" value="search" />
+                   							<input type="hidden" name="option" value="com_search" />
+                   							<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+										</form>
+
+
+
+                 
+
+
+									</div>
+								</div>
+								<div class="close-input">
+									<i class="ion-ios-close-empty"></i>
+								</div>
+							</div>
+
+							<nav class="menu-secondaire">
+															<a href="#" id="login" data-toggle="modal" data-target="#login-modal">Connexion</a>
+								<ul class="nav menu">
+<li class="item-202"><a href="/index.php/fr/service-en-ligne-telechargement" class="button">Service en Ligne &amp; Téléchargement</a></li><li class="item-178"><a href="https://login.sharedbox.com/fr/users" target="_blank" rel="noopener noreferrer"><img src="/images/messagerie.jpg" alt="messagerie" class="messagerie" /></a></li><li class="item-113"><a href="/index.php/fr/contact" >Contact</a></li><li class="item-114"><a href="/" >Lien utiles</a></li><li class="item-115"><a href="/index.php/fr/plan-du-site" >Plan du site</a></li><li class="item-160"><a href="#" >Connexion</a></li></ul>
+<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li dir="rtl">
+			<a href="/index.php/ar/">
+												<img src="/media/mod_languages/images/ar_aa.gif" alt="Arabic (اللغة العربية)" title="Arabic (اللغة العربية)" />										</a>
+			</li>
+								<li class="lang-active" dir="ltr">
+			<a href="/index.php/fr/2-francais/non-categorise/59-galerie-photos">
+												<img src="/media/mod_languages/images/fr_fr.gif" alt="Français (France)" title="Français (France)" />										</a>
+			</li>
+								<li dir="ltr">
+			<a href="/index.php/en/">
+												<img src="/media/mod_languages/images/en_gb.gif" alt="English (United Kingdom)" title="English (United Kingdom)" />										</a>
+			</li>
+				</ul>
+
+</div>
+
+							</nav>
+							<div class="stop-float"></div>
+						</div>
+					</div>
+				</div>
+				<div class="rechercher-mob text-center">
+					<form action="" >
+						<input type="text" name="searchword" placeholder="Rechercher">
+						<input type="hidden" name="task" value="search" />
+                   		<input type="hidden" name="option" value="com_search" />
+                   		<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+					</form>
+
+					<div>
+						<i class="ion-ios-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="info-header text-center">
+								<p> <p>الجمهورية الجزائرية الديمقراطية الشعبية 
+                                <p>وزارة السكـــــن و العمران و المدينة و التهيئة العمرانية
+                                   <p>République Algérienne Démocratique et Populaire</p>
+								<p>Ministère de l'Habitat, de l'Urbanisme , de la Ville et de l'aménagement du territoire</p>
+                   <p>People's Democratic Republic of Algeria</p>  
+                          <p>Ministry of Housing, Urban Planning, Cities and Territorial Development</p>        
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-logo-nav">
+				<div class="logo-nav">
+					<div class="content-logo">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<a href="http://www.cgs-dz.org/" class="logo ">
+										<img  class="img-responsive" src="http://www.cgs-dz.org/templates/cgs/images/logo-cgs.png" alt="Centre National de Recherche Appliquée en Génie Parasismique">
+									</a>                                     
+                                    <div class="info-header text-center">
+                                     <p>National Earthquake Engineering Research Center </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contant-nav-pre">
+						<div class="contant-nav">
+							<div class="container">
+								<div class="row">
+									<nav class="menu-principal ">
+										<ul class="nav menu">
+<li class="item-127 deeper parent"><a href="#" >Le cgs</a><ul class="nav-child unstyled small"><li class="item-134"><a href="/index.php/fr/le-cgs/le-mot-du-directeur" >Le mot du Directeur</a></li><li class="item-135"><a href="/index.php/fr/le-cgs/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-161"><a href="/index.php/fr/le-cgs/perspective" >Perspectives</a></li><li class="item-167"><a href="/index.php/fr/le-cgs/cooperation" >Cooperation</a></li><li class="item-212"><a href="/index.php/fr/le-cgs/experience-algerienne-en-matiere-de-gestion-du-risque-sismique" >Expérience algérienne en matière de gestion du risque sismique</a></li><li class="item-234"><a href="/index.php/fr/le-cgs/carte-google" >LOCALISATION DU SIEGE DU CGS SUR GOOGLE MAP</a></li></ul></li><li class="item-128 deeper parent"><a href="#" >Divisions</a><ul class="nav-child unstyled small"><li class="item-136"><a href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >Division de l’Aléa Sismique (D.A.S)</a></li><li class="item-137"><a href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >Division Microzonage Sismique (D.M.S)</a></li><li class="item-138"><a href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >Division Génie Sismique (D.G.S)</a></li><li class="item-139"><a href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >Division Réglementation et Réduction du Risque Sismique (D.R.S)</a></li><li class="item-142"><a href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)</a></li><li class="item-143"><a href="/index.php/fr/divisions/secretariat-general-s-g" >Secrétariat Général (S.G.)</a></li><li class="item-141"><a href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)</a></li></ul></li><li class="item-129 deeper parent"><a href="#" >Laboratoires</a><ul class="nav-child unstyled small"><li class="item-194"><a href="/index.php/fr/laboratoires/presentation-des-laboratoires-du-cgs" >Présentation des laboratoires du CGS</a></li><li class="item-144"><a href="/index.php/fr/laboratoires/un-laboratoire-d-essais-dynamiques-des-structures" >Laboratoire d’Essais Dynamiques des Structures</a></li><li class="item-147"><a href="/index.php/fr/laboratoires/un-laboratoire-de-sismologie-de-l-ingenieur" >Laboratoire de Sismologie de l’Ingénieur</a></li><li class="item-146"><a href="/index.php/fr/laboratoires/un-laboratoire-de-geophysique" >Laboratoire de Géophysique</a></li><li class="item-145"><a href="/index.php/fr/laboratoires/un-laboratoire-de-mecanique-et-dynamique-des-sols" >Laboratoire de Mécanique et Dynamique des Sols</a></li><li class="item-162"><a href="/index.php/fr/laboratoires/demande-d-essais-laboratoire" >Demande d’essais laboratoire</a></li><li class="item-235"><a href="/index.php/fr/laboratoires/localisation-du-laboratoire-sur-google-map" >LOCALISATION DU LABORATOIRE SUR GOOGLE MAP</a></li></ul></li><li class="item-130"><a href="/index.php/fr/formations" >Formations</a></li><li class="item-131 deeper parent"><a href="#" >Produits &amp; Prestations </a><ul class="nav-child unstyled small"><li class="item-198"><a href="/index.php/fr/produits-services/produits-edites" >Produits édités en vente</a></li><li class="item-197"><a href="/index.php/fr/produits-services/produits-des-recherches-d-etudes-et-d-autres-prestations" >Produits des recherches, d'études et d'autres prestations </a></li><li class="item-175"><a href="/index.php/fr/produits-services/nature-des-prestations-offertes" >Nature des prestations offertes</a></li><li class="item-218"><a href="/index.php/fr/produits-services/services-offered-by-cgs" >Services offered by CGS</a></li></ul></li><li class="item-132 deeper parent"><a href="#" >Projets de recherche &amp; Publications</a><ul class="nav-child unstyled small"><li class="item-193"><a href="/index.php/fr/projets-de-recherche-publications/liste-des-projets" >Projets de recherche</a></li><li class="item-164"><a href="/index.php/fr/projets-de-recherche-publications/publications" >Publications</a></li><li class="item-214"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique" >Production Scientifique (recueil des publications)</a></li><li class="item-243"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique-recueil-des-projets-de-recherche" >Production Scientifique (recueil des projets de recherche)</a></li></ul></li><li class="item-165"><a href="/index.php/fr/reseau-accelerometriques" >Réseau d'accéléro.</a></li></ul>
+
+									</nav>
+									<div class="mob">
+										<a class="bt-mobile" href="#">
+											<i class="icon ion-navicon"></i>
+										</a>
+
+										<div class="menu-principal-mobile">
+											<ul class="nav menu">
+<li class="item-127 deeper parent"><a href="#" >Le cgs</a><ul class="nav-child unstyled small"><li class="item-134"><a href="/index.php/fr/le-cgs/le-mot-du-directeur" >Le mot du Directeur</a></li><li class="item-135"><a href="/index.php/fr/le-cgs/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-161"><a href="/index.php/fr/le-cgs/perspective" >Perspectives</a></li><li class="item-167"><a href="/index.php/fr/le-cgs/cooperation" >Cooperation</a></li><li class="item-212"><a href="/index.php/fr/le-cgs/experience-algerienne-en-matiere-de-gestion-du-risque-sismique" >Expérience algérienne en matière de gestion du risque sismique</a></li><li class="item-234"><a href="/index.php/fr/le-cgs/carte-google" >LOCALISATION DU SIEGE DU CGS SUR GOOGLE MAP</a></li></ul></li><li class="item-128 deeper parent"><a href="#" >Divisions</a><ul class="nav-child unstyled small"><li class="item-136"><a href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >Division de l’Aléa Sismique (D.A.S)</a></li><li class="item-137"><a href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >Division Microzonage Sismique (D.M.S)</a></li><li class="item-138"><a href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >Division Génie Sismique (D.G.S)</a></li><li class="item-139"><a href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >Division Réglementation et Réduction du Risque Sismique (D.R.S)</a></li><li class="item-142"><a href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)</a></li><li class="item-143"><a href="/index.php/fr/divisions/secretariat-general-s-g" >Secrétariat Général (S.G.)</a></li><li class="item-141"><a href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)</a></li></ul></li><li class="item-129 deeper parent"><a href="#" >Laboratoires</a><ul class="nav-child unstyled small"><li class="item-194"><a href="/index.php/fr/laboratoires/presentation-des-laboratoires-du-cgs" >Présentation des laboratoires du CGS</a></li><li class="item-144"><a href="/index.php/fr/laboratoires/un-laboratoire-d-essais-dynamiques-des-structures" >Laboratoire d’Essais Dynamiques des Structures</a></li><li class="item-147"><a href="/index.php/fr/laboratoires/un-laboratoire-de-sismologie-de-l-ingenieur" >Laboratoire de Sismologie de l’Ingénieur</a></li><li class="item-146"><a href="/index.php/fr/laboratoires/un-laboratoire-de-geophysique" >Laboratoire de Géophysique</a></li><li class="item-145"><a href="/index.php/fr/laboratoires/un-laboratoire-de-mecanique-et-dynamique-des-sols" >Laboratoire de Mécanique et Dynamique des Sols</a></li><li class="item-162"><a href="/index.php/fr/laboratoires/demande-d-essais-laboratoire" >Demande d’essais laboratoire</a></li><li class="item-235"><a href="/index.php/fr/laboratoires/localisation-du-laboratoire-sur-google-map" >LOCALISATION DU LABORATOIRE SUR GOOGLE MAP</a></li></ul></li><li class="item-130"><a href="/index.php/fr/formations" >Formations</a></li><li class="item-131 deeper parent"><a href="#" >Produits &amp; Prestations </a><ul class="nav-child unstyled small"><li class="item-198"><a href="/index.php/fr/produits-services/produits-edites" >Produits édités en vente</a></li><li class="item-197"><a href="/index.php/fr/produits-services/produits-des-recherches-d-etudes-et-d-autres-prestations" >Produits des recherches, d'études et d'autres prestations </a></li><li class="item-175"><a href="/index.php/fr/produits-services/nature-des-prestations-offertes" >Nature des prestations offertes</a></li><li class="item-218"><a href="/index.php/fr/produits-services/services-offered-by-cgs" >Services offered by CGS</a></li></ul></li><li class="item-132 deeper parent"><a href="#" >Projets de recherche &amp; Publications</a><ul class="nav-child unstyled small"><li class="item-193"><a href="/index.php/fr/projets-de-recherche-publications/liste-des-projets" >Projets de recherche</a></li><li class="item-164"><a href="/index.php/fr/projets-de-recherche-publications/publications" >Publications</a></li><li class="item-214"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique" >Production Scientifique (recueil des publications)</a></li><li class="item-243"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique-recueil-des-projets-de-recherche" >Production Scientifique (recueil des projets de recherche)</a></li></ul></li><li class="item-165"><a href="/index.php/fr/reseau-accelerometriques" >Réseau d'accéléro.</a></li></ul>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+<div class="inner_page">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+			<li class="active">
+			<span class="divider icon-location"></span>
+		</li>
+	
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/index.php/fr/" class="pathway"><span itemprop="name">Accueil</span></a>
+				
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+								<meta itemprop="position" content="1">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/index.php/fr/11-francais" class="pathway"><span itemprop="name">Français</span></a>
+				
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+								<meta itemprop="position" content="2">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/index.php/fr/2-francais/non-categorise" class="pathway"><span itemprop="name">Non catégorisé</span></a>
+				
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+								<meta itemprop="position" content="3">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+				<span itemprop="name">
+					Galerie Photos				</span>
+				<meta itemprop="position" content="4">
+			</li>
+		</ul>
+
+
+			</div>
+
+		</div>
+
+		
+		<div class="row "> <!--.page-single-menu-->
+
+			<div class="col-md-8">
+
+				<div id="system-message-container">
+	</div>
+
+
+				<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR" />
+	
+		
+			<div class="page-header">
+					<h2 itemprop="headline">
+				Galerie Photos			</h2>
+									</div>
+					
+		
+	
+	
+		
+									<div itemprop="articleBody">
+		<div>
+<div id="dj-galleryGrid1p" class="dj-galleryGrid desc-over">
+	<div class="dj-galleryGrid-in">
+		<div class="dj-slides">
+        	
+          				
+				<div class="dj-slide dj-slide-1"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="extrait arreté organisation du cgs" href="/images/djmediatools/1-galerie-photos/extrait_arrete_organisation_du_cgs.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-extrait_arrete_organisation_du_cgs.jpg 80w" data-sizes="100vw" alt="extrait arreté organisation du cgs" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-2"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="index" href="/images/djmediatools/1-galerie-photos/index.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-index.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-index.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-index.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-index.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-index.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-index.jpg 80w" data-sizes="100vw" alt="index" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-3"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme-3" href="/images/djmediatools/1-galerie-photos/seisme-3.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-3.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-3.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-3.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-3.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-3.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-3.jpg 80w" data-sizes="100vw" alt="Seisme-3" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-4"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme" href="/images/djmediatools/1-galerie-photos/seisme-4.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-4.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-4.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-4.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-4.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-4.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-4.jpg 80w" data-sizes="100vw" alt="Seisme" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-5"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme-12" href="/images/djmediatools/1-galerie-photos/seisme-12.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-12.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-12.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-12.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-12.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-12.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-12.jpg 80w" data-sizes="100vw" alt="Seisme-12" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-6"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme-5" href="/images/djmediatools/1-galerie-photos/seisme-5.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-5.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-5.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-5.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-5.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-5.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-5.jpg 80w" data-sizes="100vw" alt="Seisme-5" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-7"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme-10" href="/images/djmediatools/1-galerie-photos/seisme-10.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-10.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-10.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-10.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-10.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-10.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-10.jpg 80w" data-sizes="100vw" alt="Seisme-10" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-8"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Seisme-11 (1)" href="/images/djmediatools/1-galerie-photos/seisme-11_1.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-11_1.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-seisme-11_1.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-seisme-11_1.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-seisme-11_1.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-seisme-11_1.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-seisme-11_1.jpg 80w" data-sizes="100vw" alt="Seisme-11 (1)" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-9"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Laboratoire CGS visite 01." href="/images/djmediatools/1-galerie-photos/laboratoire_cgs_visite_01jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-laboratoire_cgs_visite_01jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-laboratoire_cgs_visite_01jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-laboratoire_cgs_visite_01jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-laboratoire_cgs_visite_01jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-laboratoire_cgs_visite_01jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-laboratoire_cgs_visite_01jpg 80w" data-sizes="100vw" alt="Laboratoire CGS visite 01." class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-10"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Dr Bechtoula 10" href="/images/djmediatools/1-galerie-photos/dr_bechtoula_10.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-dr_bechtoula_10.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-dr_bechtoula_10.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-dr_bechtoula_10.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-dr_bechtoula_10.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-dr_bechtoula_10.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-dr_bechtoula_10.jpg 80w" data-sizes="100vw" alt="Dr Bechtoula 10" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-11"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="IMG_0015-DJAMAA Bat Sud" href="/images/djmediatools/1-galerie-photos/img_0015-djamaa_bat_sud.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-img_0015-djamaa_bat_sud.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-img_0015-djamaa_bat_sud.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-img_0015-djamaa_bat_sud.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-img_0015-djamaa_bat_sud.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-img_0015-djamaa_bat_sud.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-img_0015-djamaa_bat_sud.jpg 80w" data-sizes="100vw" alt="IMG_0015-DJAMAA Bat Sud" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-12"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Minaret system PIN" href="/images/djmediatools/1-galerie-photos/minaret_system_pin.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-minaret_system_pin.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-minaret_system_pin.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-minaret_system_pin.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-minaret_system_pin.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-minaret_system_pin.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-minaret_system_pin.jpg 80w" data-sizes="100vw" alt="Minaret system PIN" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-13"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="effondrement batisse" href="/images/djmediatools/1-galerie-photos/effondrement_batisse.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-effondrement_batisse.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-effondrement_batisse.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-effondrement_batisse.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-effondrement_batisse.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-effondrement_batisse.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-effondrement_batisse.jpg 80w" data-sizes="100vw" alt="effondrement batisse" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-14"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="effondrement maison1" href="/images/djmediatools/1-galerie-photos/effondrement_maison1.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-effondrement_maison1.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-effondrement_maison1.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-effondrement_maison1.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-effondrement_maison1.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-effondrement_maison1.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-effondrement_maison1.jpg 80w" data-sizes="100vw" alt="effondrement maison1" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-15"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="hauteur glissement" href="/images/djmediatools/1-galerie-photos/hauteur_glissement.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-hauteur_glissement.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-hauteur_glissement.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-hauteur_glissement.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-hauteur_glissement.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-hauteur_glissement.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-hauteur_glissement.jpg 80w" data-sizes="100vw" alt="hauteur glissement" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-16"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="fissures sol" href="/images/djmediatools/1-galerie-photos/fissures_sol.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-fissures_sol.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-fissures_sol.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-fissures_sol.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-fissures_sol.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-fissures_sol.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-fissures_sol.jpg 80w" data-sizes="100vw" alt="fissures sol" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-17"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="fissures sol" href="/images/djmediatools/1-galerie-photos/fissures_sol.1.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-fissures_sol.1.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-fissures_sol.1.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-fissures_sol.1.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-fissures_sol.1.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-fissures_sol.1.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-fissures_sol.1.jpg 80w" data-sizes="100vw" alt="fissures sol" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-18"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="A-Hualien-7-fevrier_0_1399_934" href="/images/djmediatools/1-galerie-photos/a-hualien-7-fevrier_0_1399_934.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-a-hualien-7-fevrier_0_1399_934.jpg 80w" data-sizes="100vw" alt="A-Hualien-7-fevrier_0_1399_934" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-19"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Colloque1" href="/images/djmediatools/1-galerie-photos/colloque1.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-colloque1.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-colloque1.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-colloque1.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-colloque1.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-colloque1.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-colloque1.jpg 80w" data-sizes="100vw" alt="Colloque1" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+            			
+				<div class="dj-slide dj-slide-20"  tabindex="0">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><a class="dj-slide-link" data-title="Communication directeur CGS2" href="/images/djmediatools/1-galerie-photos/communication_directeur_cgs2.jpg" target="_self"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-communication_directeur_cgs2.jpg"  data-srcset="/media/djmediatools/cache/1-galerie-photos/300x300-crop-90-communication_directeur_cgs2.jpg 300w, /media/djmediatools/cache/1-galerie-photos/_240w/300x300-crop-90-communication_directeur_cgs2.jpg 240w, /media/djmediatools/cache/1-galerie-photos/_160w/300x300-crop-90-communication_directeur_cgs2.jpg 160w, /media/djmediatools/cache/1-galerie-photos/_120w/300x300-crop-90-communication_directeur_cgs2.jpg 120w, /media/djmediatools/cache/1-galerie-photos/_80w/300x300-crop-90-communication_directeur_cgs2.jpg 80w" data-sizes="100vw" alt="Communication directeur CGS2" class="dj-image" width="300" height="300"  /></a></div>
+						
+													<div class="dj-slide-desc">
+																			</div>
+											</div>
+				</div>
+				
+                    	
+        </div>
+		
+		<div class="dj-gallery-end" style="clear: both" tabindex="0"></div>
+	</div>
+</div>
+
+</div>	</div>
+
+	
+							</div>
+
+				
+			</div>
+
+			<div class="col-md-4 content_menu_interieur">
+
+				
+					<div class='menu_interieur'><ul>
+							<li>
+
+								<a href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >
+
+									Division de l’Aléa Sismique (D.A.S)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >
+
+									Division Microzonage Sismique (D.M.S)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >
+
+									Division Génie Sismique (D.G.S)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >
+
+									Division Réglementation et Réduction du Risque Sismique (D.R.S)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/2-francais/non-categorise/34-departements-techniques" >
+
+									Départements Techniques
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >
+
+									Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >
+
+									Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/divisions/secretariat-general-s-g" >
+
+									Secrétariat Général (S.G.)
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/laboratoires/un-laboratoire-d-essais-dynamiques-des-structures" >
+
+									Laboratoire d’Essais Dynamiques des Structures
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/laboratoires/un-laboratoire-de-mecanique-et-dynamique-des-sols" >
+
+									Laboratoire de Mécanique et Dynamique des Sols
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/laboratoires/un-laboratoire-de-geophysique" >
+
+									Laboratoire de Géophysique
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/laboratoires/un-laboratoire-de-sismologie-de-l-ingenieur" >
+
+									Laboratoire de Sismologie de l’Ingénieur
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/2-francais/non-categorise/59-galerie-photos" class='active'>
+
+									Galerie Photos
+								</a>
+
+							</li>
+
+							
+							<li>
+
+								<a href="/index.php/fr/2-francais/non-categorise/65-formulaire-d-inscription-au-seminaire" >
+
+									Formulaire D’inscription au Seminaire
+								</a>
+
+							</li>
+
+							</div></ul>
+				</div>
+
+				
+			</div>
+
+		</div>
+
+		
+	</div>
+
+</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 ">
+						<div class="menu-footer">		<div class="moduletable">
+							<h2 class="titre-modules-h2">Menu</h2>
+						<ul class="nav menu">
+<li class="item-169"><a href="/index.php/fr/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-170"><a href="/index.php/fr/missions" >Missions</a></li><li class="item-171"><a href="/index.php/fr/formations-1" >Formations</a></li><li class="item-172"><a href="/index.php/fr/produits-1" >Produits</a></li><li class="item-176"><a href="/index.php/fr/prestations" >Prestations</a></li><li class="item-173"><a href="/index.php/fr/reseau-accelerometriques-1" >Réseau accéléromètriques</a></li></ul>
+		</div>
+	</div>
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="text-footer">		<div class="moduletable">
+							<h2 class="titre-modules-h2">Contactez nous</h2>
+						
+
+<div class="custom"  >
+	<ul>
+<li>Centre National De Recherche Appliquée En Genie Parasismique<br /> Rue Kaddour Rahim Prolongée B.P.252<br /> Hussein day - ALGER</li>
+<li><strong>Tel</strong> : 023 77 58 15/26</li>
+<li><strong>Fax</strong> : 023772323</li>
+<li><strong>Email</strong> : <a href="mailto:cgsd@cgs.dz">cgsd@cgs-dz.org</a></li>
+</ul></div>
+		</div>
+	</div>
+					</div>
+
+					<div class="col-sm-4 ">
+								<div class="moduletable">
+							<h3>                                NOTRE SIEGE</h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p> </p>
+<p style="text-align: center;"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.2519320449196!2d3.0945799768186877!3d36.73990288877735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad5515c1e31d%3A0x607e40d303e1a9e1!2sCGS%20-%20CENTRE%20NATIONAL%20DE%20RECHERCHE%20APPLIQUEE%20EN%20GENIE%20PARASISMIQUE!5e0!3m2!1sfr!2sdz!4v1712056694554!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p></div>
+		</div>
+			<div class="moduletable">
+							<h3>NOTRE LABORATOIRE </h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102328.66308134266!2d2.891421604218567!3d36.72806737271475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128faf3134f48d3b%3A0xafa6adaf11a6d3ca!2sCGS%2C%20Laboratory!5e0!3m2!1sfr!2sdz!4v1712130920343!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p></div>
+		</div>
+	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="resaux-sociaux"><ul class="nav menu">
+<li class="item-151"><a href="https://www.facebook.com/profile.php?id=61566052306957" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/facebook-icon.png" alt="facebook" /></a></li><li class="item-152"><a href="https://twitter.com/" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/twitter-icon.png" alt="Twitter" /></a></li><li class="item-153"><a href="http://linkedin.com/" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/linkedin-icon.png" alt="Linkedin" /></a></li><li class="item-154"><a href="https://youtube.com/@CGSRECHERCHEPARASISMIQUE/videos" class="reseau-social" onclick="window.open(this.href, &#039;targetWindow&#039;, &#039;toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,&#039;); return false;"><img src="/images/icons/youtube-icon.png" alt="Youtube" /></a></li></ul>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-left">
+						<p>© 2018 - Tous droits réservés - CGS</p>
+					</div>
+
+					<div class="col-md-6 text-right">
+						<p>Conception et Développement : <a href="http://alcomnet.com/" ><b>Alcomnet</b></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/templates/cgs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/template.css">
+	<script src="/templates/cgs/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/wow.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/jquery.dataTables.min" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+	<script src="/templates/cgs/js/app.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<base href="http://www.cgs-dz.org/index.php/fr/divisions/division-genie-sismique-d-g-s" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Centre National de Recherche Appliquée en Génie Parasismique (CGS)" />
+	<meta name="description" content="Centre National de Recherche Appliquée en Génie Parasismique" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Division Génie Sismique (D.G.S)</title>
+	<link href="/media/tabs/css/style.min.css?v=7.2.1" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<link href="/media/mod_languages/css/template.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"870285ce75b82b2fbd1fef9a06be615f","system.paths":{"root":"","base":""},"rl_tabs":{"use_hash":1,"reload_iframes":0,"init_timeout":0,"urlscroll":0},"system.keepalive":{"interval":840000,"uri":"\/index.php\/fr\/component\/ajax\/?format=json"}}</script>
+	<script src="/media/jui/js/jquery.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/tabs/js/script.min.js?v=7.2.1" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.ui.core.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/modules/mod_accordeonck/assets/mod_accordeonck.js" type="text/javascript"></script>
+	<script src="/modules/mod_accordeonck/assets/jquery.easing.1.3.js" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/polyfill.event.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script><![endif]-->
+	<script src="/media/system/js/keepalive.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+       jQuery(document).ready(function(jQuery){
+        jQuery('#accordeonck121').accordeonmenuck({fadetransition : false,eventtype : 'click',transition : 'linear',menuID : 'accordeonck121',imageplus : '/modules/mod_accordeonck/assets/plus.png',imageminus : '/modules/mod_accordeonck/assets/minus.png',defaultopenedid : '',activeeffect : '',duree : 500});
+}); jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"}); });
+	</script>
+
+</head>
+
+
+<body id="default">
+
+<div class="training">
+<a href="/index.php/fr/formations">Formations</a>
+</div>
+
+	<!-- Modal Login-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Connexion</h4>
+				</div>
+				<div class="modal-body">
+					<form action="/index.php/fr/divisions/division-genie-sismique-d-g-s" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-user hasTooltip" title="Identifiant"></span>
+							<label for="modlgn-username" class="element-invisible">Identifiant</label>
+						</span>
+						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Identifiant" />
+					</div>
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<div class="input-prepend">
+						<span class="add-on">
+							<span class="icon-lock hasTooltip" title="Mot de passe">
+							</span>
+								<label for="modlgn-passwd" class="element-invisible">Mot de passe							</label>
+						</span>
+						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Mot de passe" />
+					</div>
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Se souvenir de moi</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Connexion</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+							<li>
+					<a href="/index.php/fr/component/users/?view=registration&amp;Itemid=101">
+					Créer un compte <span class="icon-arrow-right"></span></a>
+				</li>
+							<li>
+					<a href="/index.php/fr/component/users/?view=remind&amp;Itemid=101">
+					Identifiant oublié ?</a>
+				</li>
+				<li>
+					<a href="/index.php/fr/component/users/?view=reset&amp;Itemid=101">
+					Mot de passe oublié ?</a>
+				</li>
+			</ul>
+		<input type="hidden" name="option" value="com_users" />
+		<input type="hidden" name="task" value="user.login" />
+		<input type="hidden" name="return" value="aHR0cDovL3d3dy5jZ3MtZHoub3JnL2luZGV4LnBocC9mci9kaXZpc2lvbnMvZGl2aXNpb24tZ2VuaWUtc2lzbWlxdWUtZC1nLXM=" />
+		<input type="hidden" name="870285ce75b82b2fbd1fef9a06be615f" value="1" />	</div>
+	</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Demande -->
+	<div class="modal fade" id="demande-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Demandez</h4>
+				</div>
+				<div class="modal-body ">
+					<p>Pour effectuer une demande  il faut avoir un compte validé  sur notre site</p><a class='link' href='index.php?option=com_users&view=registration' ><b>Créer un compte</b></a><br/><a class='link' href='index.php?option=com_users&view=login' ><b>Connexion</b></a>				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll"><a href="#" class="ion-arrow-up-b"></a></div>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<!---->
+						<ul class="lang-site">
+							<li><a href="#" >E</a></li>
+							<li><a href="#" >ا</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-9">
+						<div class="content-header ">
+							<div class="rechercher">
+								<div class="rechercher-btn">
+									<i class="ion-ios-search"></i>
+									<div class="rechercher-form">
+
+
+
+										<form method="post" action="" class="rechercher-form-j">
+											<input id="search-searchword" type="text" name="searchword" placeholder="Rechercher"  value="">
+											<input type="hidden" name="task" value="search" />
+                   							<input type="hidden" name="option" value="com_search" />
+                   							<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+										</form>
+
+
+
+                 
+
+
+									</div>
+								</div>
+								<div class="close-input">
+									<i class="ion-ios-close-empty"></i>
+								</div>
+							</div>
+
+							<nav class="menu-secondaire">
+															<a href="#" id="login" data-toggle="modal" data-target="#login-modal">Connexion</a>
+								<ul class="nav menu">
+<li class="item-202"><a href="/index.php/fr/service-en-ligne-telechargement" class="button">Service en Ligne &amp; Téléchargement</a></li><li class="item-178"><a href="https://login.sharedbox.com/fr/users" target="_blank" rel="noopener noreferrer"><img src="/images/messagerie.jpg" alt="messagerie" class="messagerie" /></a></li><li class="item-113"><a href="/index.php/fr/contact" >Contact</a></li><li class="item-114"><a href="/" >Lien utiles</a></li><li class="item-115"><a href="/index.php/fr/plan-du-site" >Plan du site</a></li><li class="item-160"><a href="#" >Connexion</a></li></ul>
+<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li dir="rtl">
+			<a href="/index.php/ar/">
+												<img src="/media/mod_languages/images/ar_aa.gif" alt="Arabic (اللغة العربية)" title="Arabic (اللغة العربية)" />										</a>
+			</li>
+								<li class="lang-active" dir="ltr">
+			<a href="/index.php/fr/divisions/division-genie-sismique-d-g-s">
+												<img src="/media/mod_languages/images/fr_fr.gif" alt="Français (France)" title="Français (France)" />										</a>
+			</li>
+								<li dir="ltr">
+			<a href="/index.php/en/">
+												<img src="/media/mod_languages/images/en_gb.gif" alt="English (United Kingdom)" title="English (United Kingdom)" />										</a>
+			</li>
+				</ul>
+
+</div>
+
+							</nav>
+							<div class="stop-float"></div>
+						</div>
+					</div>
+				</div>
+				<div class="rechercher-mob text-center">
+					<form action="" >
+						<input type="text" name="searchword" placeholder="Rechercher">
+						<input type="hidden" name="task" value="search" />
+                   		<input type="hidden" name="option" value="com_search" />
+                   		<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+					</form>
+
+					<div>
+						<i class="ion-ios-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="info-header text-center">
+								<p> <p>الجمهورية الجزائرية الديمقراطية الشعبية 
+                                <p>وزارة السكـــــن و العمران و المدينة و التهيئة العمرانية
+                                   <p>République Algérienne Démocratique et Populaire</p>
+								<p>Ministère de l'Habitat, de l'Urbanisme , de la Ville et de l'aménagement du territoire</p>
+                   <p>People's Democratic Republic of Algeria</p>  
+                          <p>Ministry of Housing, Urban Planning, Cities and Territorial Development</p>        
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-logo-nav">
+				<div class="logo-nav">
+					<div class="content-logo">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<a href="http://www.cgs-dz.org/" class="logo ">
+										<img  class="img-responsive" src="http://www.cgs-dz.org/templates/cgs/images/logo-cgs.png" alt="Centre National de Recherche Appliquée en Génie Parasismique">
+									</a>                                     
+                                    <div class="info-header text-center">
+                                     <p>National Earthquake Engineering Research Center </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contant-nav-pre">
+						<div class="contant-nav">
+							<div class="container">
+								<div class="row">
+									<nav class="menu-principal ">
+										<ul class="nav menu">
+<li class="item-127 deeper parent"><a href="#" >Le cgs</a><ul class="nav-child unstyled small"><li class="item-134"><a href="/index.php/fr/le-cgs/le-mot-du-directeur" >Le mot du Directeur</a></li><li class="item-135"><a href="/index.php/fr/le-cgs/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-161"><a href="/index.php/fr/le-cgs/perspective" >Perspectives</a></li><li class="item-167"><a href="/index.php/fr/le-cgs/cooperation" >Cooperation</a></li><li class="item-212"><a href="/index.php/fr/le-cgs/experience-algerienne-en-matiere-de-gestion-du-risque-sismique" >Expérience algérienne en matière de gestion du risque sismique</a></li><li class="item-234"><a href="/index.php/fr/le-cgs/carte-google" >LOCALISATION DU SIEGE DU CGS SUR GOOGLE MAP</a></li></ul></li><li class="item-128 active deeper parent"><a href="#" >Divisions</a><ul class="nav-child unstyled small"><li class="item-136"><a href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >Division de l’Aléa Sismique (D.A.S)</a></li><li class="item-137"><a href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >Division Microzonage Sismique (D.M.S)</a></li><li class="item-138 current active"><a href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >Division Génie Sismique (D.G.S)</a></li><li class="item-139"><a href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >Division Réglementation et Réduction du Risque Sismique (D.R.S)</a></li><li class="item-142"><a href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)</a></li><li class="item-143"><a href="/index.php/fr/divisions/secretariat-general-s-g" >Secrétariat Général (S.G.)</a></li><li class="item-141"><a href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)</a></li></ul></li><li class="item-129 deeper parent"><a href="#" >Laboratoires</a><ul class="nav-child unstyled small"><li class="item-194"><a href="/index.php/fr/laboratoires/presentation-des-laboratoires-du-cgs" >Présentation des laboratoires du CGS</a></li><li class="item-144"><a href="/index.php/fr/laboratoires/un-laboratoire-d-essais-dynamiques-des-structures" >Laboratoire d’Essais Dynamiques des Structures</a></li><li class="item-147"><a href="/index.php/fr/laboratoires/un-laboratoire-de-sismologie-de-l-ingenieur" >Laboratoire de Sismologie de l’Ingénieur</a></li><li class="item-146"><a href="/index.php/fr/laboratoires/un-laboratoire-de-geophysique" >Laboratoire de Géophysique</a></li><li class="item-145"><a href="/index.php/fr/laboratoires/un-laboratoire-de-mecanique-et-dynamique-des-sols" >Laboratoire de Mécanique et Dynamique des Sols</a></li><li class="item-162"><a href="/index.php/fr/laboratoires/demande-d-essais-laboratoire" >Demande d’essais laboratoire</a></li><li class="item-235"><a href="/index.php/fr/laboratoires/localisation-du-laboratoire-sur-google-map" >LOCALISATION DU LABORATOIRE SUR GOOGLE MAP</a></li></ul></li><li class="item-130"><a href="/index.php/fr/formations" >Formations</a></li><li class="item-131 deeper parent"><a href="#" >Produits &amp; Prestations </a><ul class="nav-child unstyled small"><li class="item-198"><a href="/index.php/fr/produits-services/produits-edites" >Produits édités en vente</a></li><li class="item-197"><a href="/index.php/fr/produits-services/produits-des-recherches-d-etudes-et-d-autres-prestations" >Produits des recherches, d'études et d'autres prestations </a></li><li class="item-175"><a href="/index.php/fr/produits-services/nature-des-prestations-offertes" >Nature des prestations offertes</a></li><li class="item-218"><a href="/index.php/fr/produits-services/services-offered-by-cgs" >Services offered by CGS</a></li></ul></li><li class="item-132 deeper parent"><a href="#" >Projets de recherche &amp; Publications</a><ul class="nav-child unstyled small"><li class="item-193"><a href="/index.php/fr/projets-de-recherche-publications/liste-des-projets" >Projets de recherche</a></li><li class="item-164"><a href="/index.php/fr/projets-de-recherche-publications/publications" >Publications</a></li><li class="item-214"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique" >Production Scientifique (recueil des publications)</a></li><li class="item-243"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique-recueil-des-projets-de-recherche" >Production Scientifique (recueil des projets de recherche)</a></li></ul></li><li class="item-165"><a href="/index.php/fr/reseau-accelerometriques" >Réseau d'accéléro.</a></li></ul>
+
+									</nav>
+									<div class="mob">
+										<a class="bt-mobile" href="#">
+											<i class="icon ion-navicon"></i>
+										</a>
+
+										<div class="menu-principal-mobile">
+											<ul class="nav menu">
+<li class="item-127 deeper parent"><a href="#" >Le cgs</a><ul class="nav-child unstyled small"><li class="item-134"><a href="/index.php/fr/le-cgs/le-mot-du-directeur" >Le mot du Directeur</a></li><li class="item-135"><a href="/index.php/fr/le-cgs/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-161"><a href="/index.php/fr/le-cgs/perspective" >Perspectives</a></li><li class="item-167"><a href="/index.php/fr/le-cgs/cooperation" >Cooperation</a></li><li class="item-212"><a href="/index.php/fr/le-cgs/experience-algerienne-en-matiere-de-gestion-du-risque-sismique" >Expérience algérienne en matière de gestion du risque sismique</a></li><li class="item-234"><a href="/index.php/fr/le-cgs/carte-google" >LOCALISATION DU SIEGE DU CGS SUR GOOGLE MAP</a></li></ul></li><li class="item-128 active deeper parent"><a href="#" >Divisions</a><ul class="nav-child unstyled small"><li class="item-136"><a href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >Division de l’Aléa Sismique (D.A.S)</a></li><li class="item-137"><a href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >Division Microzonage Sismique (D.M.S)</a></li><li class="item-138 current active"><a href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >Division Génie Sismique (D.G.S)</a></li><li class="item-139"><a href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >Division Réglementation et Réduction du Risque Sismique (D.R.S)</a></li><li class="item-142"><a href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)</a></li><li class="item-143"><a href="/index.php/fr/divisions/secretariat-general-s-g" >Secrétariat Général (S.G.)</a></li><li class="item-141"><a href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)</a></li></ul></li><li class="item-129 deeper parent"><a href="#" >Laboratoires</a><ul class="nav-child unstyled small"><li class="item-194"><a href="/index.php/fr/laboratoires/presentation-des-laboratoires-du-cgs" >Présentation des laboratoires du CGS</a></li><li class="item-144"><a href="/index.php/fr/laboratoires/un-laboratoire-d-essais-dynamiques-des-structures" >Laboratoire d’Essais Dynamiques des Structures</a></li><li class="item-147"><a href="/index.php/fr/laboratoires/un-laboratoire-de-sismologie-de-l-ingenieur" >Laboratoire de Sismologie de l’Ingénieur</a></li><li class="item-146"><a href="/index.php/fr/laboratoires/un-laboratoire-de-geophysique" >Laboratoire de Géophysique</a></li><li class="item-145"><a href="/index.php/fr/laboratoires/un-laboratoire-de-mecanique-et-dynamique-des-sols" >Laboratoire de Mécanique et Dynamique des Sols</a></li><li class="item-162"><a href="/index.php/fr/laboratoires/demande-d-essais-laboratoire" >Demande d’essais laboratoire</a></li><li class="item-235"><a href="/index.php/fr/laboratoires/localisation-du-laboratoire-sur-google-map" >LOCALISATION DU LABORATOIRE SUR GOOGLE MAP</a></li></ul></li><li class="item-130"><a href="/index.php/fr/formations" >Formations</a></li><li class="item-131 deeper parent"><a href="#" >Produits &amp; Prestations </a><ul class="nav-child unstyled small"><li class="item-198"><a href="/index.php/fr/produits-services/produits-edites" >Produits édités en vente</a></li><li class="item-197"><a href="/index.php/fr/produits-services/produits-des-recherches-d-etudes-et-d-autres-prestations" >Produits des recherches, d'études et d'autres prestations </a></li><li class="item-175"><a href="/index.php/fr/produits-services/nature-des-prestations-offertes" >Nature des prestations offertes</a></li><li class="item-218"><a href="/index.php/fr/produits-services/services-offered-by-cgs" >Services offered by CGS</a></li></ul></li><li class="item-132 deeper parent"><a href="#" >Projets de recherche &amp; Publications</a><ul class="nav-child unstyled small"><li class="item-193"><a href="/index.php/fr/projets-de-recherche-publications/liste-des-projets" >Projets de recherche</a></li><li class="item-164"><a href="/index.php/fr/projets-de-recherche-publications/publications" >Publications</a></li><li class="item-214"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique" >Production Scientifique (recueil des publications)</a></li><li class="item-243"><a href="/index.php/fr/projets-de-recherche-publications/production-scientifique-recueil-des-projets-de-recherche" >Production Scientifique (recueil des projets de recherche)</a></li></ul></li><li class="item-165"><a href="/index.php/fr/reseau-accelerometriques" >Réseau d'accéléro.</a></li></ul>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+<div class="inner_page">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				
+<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+			<li class="active">
+			<span class="divider icon-location"></span>
+		</li>
+	
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="/index.php/fr/" class="pathway"><span itemprop="name">Accueil</span></a>
+				
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+								<meta itemprop="position" content="1">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+									<a itemprop="item" href="#" class="pathway"><span itemprop="name">Divisions</span></a>
+				
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+								<meta itemprop="position" content="2">
+			</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+				<span itemprop="name">
+					Division Génie Sismique (D.G.S)				</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ul>
+
+
+			</div>
+
+		</div>
+
+		
+		<div class="row "> <!--.page-single-menu-->
+
+			<div class="col-md-8">
+
+				<div id="system-message-container">
+	</div>
+
+
+				<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR" />
+	
+		
+			<div class="page-header">
+					<h2 itemprop="headline">
+				Division Génie Sismique (D.G.S)			</h2>
+									</div>
+					
+		
+	
+	
+		
+									<div itemprop="articleBody">
+		<p>Cette division constituée de cinq (05) équipes de recherche est chargée, sur la base des résultats valorisés des divisions sus-nommées, de mener des investigations dans les domaines de la vulnérabilité et du risque sismiques. Avec l’appui de recherches expérimentales sur la dynamique des matériaux et systèmes structuraux, cette division a pour mission d’analyser la bonne tenue sismique des ouvrages (bâtiments, ouvrages d’art, …).<br />Les cinq (05) équipes composant la division investiront globalement trois axes de recherche à savoir :</p>
+<ul>
+<li>La vulnérabilité des structures existantes,</li>
+<li>La dynamique des systèmes structuraux (bâtiments, ouvrages d'art,…),</li>
+<li>Les études expérimentales sur les composants structuraux (matériaux et éléments structuraux),</li>
+</ul>
+<p>Les intitulés des cinq (05) équipes de recherche que cette division englobe sont :</p>
+<ul>
+<li>vulnérabilité et comportement statique et dynamique des structures de bâtiments</li>
+<li>vulnérabilité des ouvrages d’art</li>
+<li>vulnérabilité des installations et grands ouvrages hydrauliques</li>
+<li>ouvrages métalliques</li>
+<li>matériaux et procédés de construction</li>
+</ul>
+
+
+<!-- START: Tabs -->
+<div class="rl_tabs nn_tabs outline_handles outline_content top align_left">
+<!--googleoff: index-->
+<a id="rl_tabs-scrollto_1" class="anchor rl_tabs-scroll nn_tabs-scroll"></a>
+<ul class="nav nav-tabs" id="set-rl_tabs-1" role="tablist">
+<li class="rl_tabs-tab nn_tabs-tab nav-item active" role="presentation"><a href="#vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" class="rl_tabs-toggle nn_tabs-toggle nav-link" id="tab-vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" data-toggle="tab" data-id="vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" role="tab" aria-controls="vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" aria-selected="true"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Vulnérabilité et comportement statique et dynamique des bâtiments</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab nav-item" role="presentation"><a href="#vulnerabilite-des-ouvrages-d-art" class="rl_tabs-toggle nn_tabs-toggle nav-link" id="tab-vulnerabilite-des-ouvrages-d-art" data-toggle="tab" data-id="vulnerabilite-des-ouvrages-d-art" role="tab" aria-controls="vulnerabilite-des-ouvrages-d-art" aria-selected="false"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Vulnérabilité des ouvrages d’art</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab nav-item" role="presentation"><a href="#vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" class="rl_tabs-toggle nn_tabs-toggle nav-link" id="tab-vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" data-toggle="tab" data-id="vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" role="tab" aria-controls="vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" aria-selected="false"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Vulnérabilité des installations et grands ouvrages hydrauliques</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab nav-item" role="presentation"><a href="#ouvrages-metalliques" class="rl_tabs-toggle nn_tabs-toggle nav-link" id="tab-ouvrages-metalliques" data-toggle="tab" data-id="ouvrages-metalliques" role="tab" aria-controls="ouvrages-metalliques" aria-selected="false"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Ouvrages métalliques</span></a></li>
+<li class="rl_tabs-tab nn_tabs-tab nav-item" role="presentation"><a href="#materiaux-et-procedes-de-construction" class="rl_tabs-toggle nn_tabs-toggle nav-link" id="tab-materiaux-et-procedes-de-construction" data-toggle="tab" data-id="materiaux-et-procedes-de-construction" role="tab" aria-controls="materiaux-et-procedes-de-construction" aria-selected="false"><span class="rl_tabs-toggle-inner nn_tabs-toggle-inner">Matériaux et procédés de construction</span></a></li>
+</ul>
+<!--googleon: index-->
+<div class="tab-content">
+<div class="tab-pane rl_tabs-pane nn_tabs-pane active" id="vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" role="tabpanel" aria-labelledby="tab-vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" aria-hidden="false">
+<h2 class="rl_tabs-title nn_tabs-title"><a id="anchor-vulnerabilite-et-comportement-statique-et-dynamique-des-batiments" class="anchor"></a>Vulnérabilité et comportement statique et dynamique des bâtiments</h2>
+<p><em><strong>Les Tâches</strong></em></p>
+<ul>
+<li>analyse statique et dynamique des structures de bâtiments dans le domaine linéaire et non-linéaire</li>
+<li>analyse statique et dynamique des structures de bâtiments en trois dimensions dans le domaine linéaire et non-linéaire</li>
+<li>études expérimentales du comportement statique et dynamique des bâtiments ou éléments de structures de bâtiment.</li>
+<li>enrichissement de la réglementation parasismique algérienne par les résultats découlant de cette recherche</li>
+<li>réalisation d'études de vulnérabilité de bâtiments existants :<br />
+<ul>
+<li>identification des structures présentant des risques sismiques,</li>
+<li>classification des éléments présentant des risques sismiques,</li>
+<li>études expérimentales de cas types,</li>
+<li>établissement des fonctions de vulnérabilité.</li>
+</ul>
+</li>
+<li>documentation relative aux dommages et à la vulnérabilité :<br />
+<ul>
+<li>collecte d'informations</li>
+<li>analyse</li>
+<li>valorisation</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+<div class="tab-pane rl_tabs-pane nn_tabs-pane" id="vulnerabilite-des-ouvrages-d-art" role="tabpanel" aria-labelledby="tab-vulnerabilite-des-ouvrages-d-art" aria-hidden="true">
+<h2 class="rl_tabs-title nn_tabs-title"><a id="anchor-vulnerabilite-des-ouvrages-d-art" class="anchor"></a>Vulnérabilité des ouvrages d’art</h2>
+<p><strong><em>Les Tâches</em></strong></p>
+<ul>
+<li>recherche théorique et expérimentale et étude du comportement statique et dynamique des ponts et autres ouvrages d'art.</li>
+<li>mise en relief des éléments constitutifs des ouvrages d'art les plus vulnérables à partir de l’étude de pathologie et de l’expérience post sismique</li>
+<li>développement des fonctions de vulnérabilité empiriques des éléments de structures et structures des ouvrages d'art, à partir de la banque de données expérimentales des enregistrements algériens</li>
+<li>développement à moyen et à long terme, d’une méthodologie adéquate pour l’analyse de la vulnérabilité des ouvrages d'art.</li>
+<li>contribution au développement d’une banque de données pour l’ensemble des ouvrages d'art vitaux à l’échelle du territoire national. Celle ci doit inclure</li>
+<li>l’ensemble des informations concernant :<br />
+<ul>
+<li>le type, l’année de réalisation et de mise en service</li>
+<li>le système de fondations</li>
+<li>les caractéristiques dynamiques obtenues à partir de tests dynamiques <br />sous vibrations ambiantes ou à partir de vibrations forcées</li>
+<li>les caractéristiques géologiques, topographiques et tectoniques du site <br />d’implantation</li>
+<li>l’aléa sismique régional et local</li>
+<li>le procédé de construction</li>
+</ul>
+</li>
+<li>intégration de l’ensemble de ces informations dans un SIG, pour l’étude des scénarios de risque (échelle macro)</li>
+<li>proposition à moyen et long terme, des méthodes adéquates pour la réparation, le confortement et le renforcement des ouvrages d'art.</li>
+</ul>
+
+
+</div>
+<div class="tab-pane rl_tabs-pane nn_tabs-pane" id="vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" role="tabpanel" aria-labelledby="tab-vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" aria-hidden="true">
+<h2 class="rl_tabs-title nn_tabs-title"><a id="anchor-vulnerabilite-des-installations-et-grands-ouvrages-hydrauliques" class="anchor"></a>Vulnérabilité des installations et grands ouvrages hydrauliques</h2>
+<p><strong><em>Les Tâches</em></strong></p>
+<ul>
+<li>recherche théorique et expérimentale et étude du comportement statique et dynamique des installations et grands ouvrages hydrauliques.</li>
+<li>mise en relief des éléments constitutifs des installations et grands ouvrages hydrauliques les plus vulnérables à partir de l’étude de pathologie et de l’expérience post sismique</li>
+<li>développement des fonctions de vulnérabilité empiriques des éléments de structures et structures des installations et grands ouvrages hydrauliques, à partir de la banque de données expérimentales des enregistrements algériens</li>
+<li>développement à moyen et à long terme, d’une méthodologie adéquate pour l’analyse de la vulnérabilité des installations et grands ouvrages hydrauliques.</li>
+<li>contribution au développement d’une banque de données pour l’ensemble des installations et grands ouvrages hydrauliques vitaux à l’échelle du territoire national. Celle ci doit inclure l’ensemble des informations concernant :<br />
+<ul>
+<li>le type, l’année de réalisation et de mise en service</li>
+<li>le système de fondations</li>
+<li>les caractéristiques dynamiques obtenues à partir de tests dynamiques <br />sous vibrations ambiantes ou à partir de vibrations forcées</li>
+<li>les caractéristiques géologiques, topographiques et tectoniques du site <br />d’implantation</li>
+<li>l’aléa sismique régional et local</li>
+<li>le procédé de construction</li>
+</ul>
+</li>
+<li>intégration de l’ensemble de ces informations dans un SIG, pour l’étude des scénarios de risque (échelle macro)</li>
+<li>proposition à moyen et long terme, des méthodes adéquates pour la réparation, le confortement et le renforcement des installations et grands ouvrages hydrauliques.</li>
+</ul>
+
+
+</div>
+<div class="tab-pane rl_tabs-pane nn_tabs-pane" id="ouvrages-metalliques" role="tabpanel" aria-labelledby="tab-ouvrages-metalliques" aria-hidden="true">
+<h2 class="rl_tabs-title nn_tabs-title"><a id="anchor-ouvrages-metalliques" class="anchor"></a>Ouvrages métalliques</h2>
+<p><em><strong>Les Tâches</strong></em></p>
+<p>Cette équipe se consacre à la définition et à la mise en œuvre de projets de recherche sectorielle en rapport avec les bâtiments et les ouvrages à structure en acier. Elle doit mener notamment les tâches suivantes :<br />investigations analytiques et expérimentales sur le comportement et la réponse sismiques des composants, des assemblages et des structures classiques ou</p>
+<ul>
+<li>innovantes en acier</li>
+<li>adaptation et amélioration des méthodes existantes destinées à l’analyse de la vulnérabilité sismique des bâtiments et ouvrages à structures en acier</li>
+<li>élaboration de nouvelles méthodes pour l’analyse de la vulnérabilité et l’évaluation du risque sismique des ouvrages</li>
+<li>élaboration de règles et de procédures de dimensionnement parasismique  spécifiques aux bâtiments à ossatures métalliques</li>
+<li>diffusion des résultats de ses travaux à travers des actions de formation vers l’ingénierie sectorielle en vue d’accroître ses capacités en matière d'études parasismiques des charpentes métalliques.</li>
+</ul>
+
+
+</div>
+<div class="tab-pane rl_tabs-pane nn_tabs-pane" id="materiaux-et-procedes-de-construction" role="tabpanel" aria-labelledby="tab-materiaux-et-procedes-de-construction" aria-hidden="true">
+<h2 class="rl_tabs-title nn_tabs-title"><a id="anchor-materiaux-et-procedes-de-construction" class="anchor"></a>Matériaux et procédés de construction</h2>
+<ul>
+<li><em><strong>Les Tâches :</strong></em><br /><br /></li>
+<li>recherche expérimentale sur les matériaux :<br />
+<ul>
+<li>caractérisation mécanique des matériaux de construction dans le domaine<br />quasi- statique</li>
+<li>caractérisation mécanique des matériaux de construction dans le domaine dynamique</li>
+</ul>
+</li>
+<li>vulnérabilité sismique des matériaux constitutifs des structures existantes (enquêtes post-sismiques)</li>
+<li>valorisation des résultats expérimentaux :<br />
+<ul>
+<li>loi de comportement et critère de rupture des matériaux</li>
+<li>validation numérique des modèles proposés</li>
+</ul>
+</li>
+</ul>
+</div></div></div><!-- END: Tabs -->	</div>
+
+	
+							</div>
+
+				
+			</div>
+
+			<div class="col-md-4 content_menu_interieur">
+
+				
+				<div class="menu_interieur">
+
+					<div class="accordeonck ">
+<ul class="menu" id="accordeonck121">
+<li id="item-136" class="accordeonck item-136 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/division-de-l-alea-sismique-d-a-s" >Division de l’Aléa Sismique (D.A.S)</a></span></li><li id="item-137" class="accordeonck item-137 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/division-microzonage-sismique-d-m-s" >Division Microzonage Sismique (D.M.S)</a></span></li><li id="item-138" class="accordeonck item-138 current active level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck isactive " href="/index.php/fr/divisions/division-genie-sismique-d-g-s" >Division Génie Sismique (D.G.S)</a></span></li><li id="item-139" class="accordeonck item-139 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/division-reglementation-et-reduction-du-risque-sismique-d-r-s" >Division Réglementation et Réduction du Risque Sismique (D.R.S)</a></span></li><li id="item-142" class="accordeonck item-142 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/departement-de-l-information-scientifique-des-relations-exterieures-et-de-la-valorisation-des-resultats-de-la-recherche-d-i-s" >Département de l’Information Scientifique,  des Relations extérieures et de la Valorisation  des résultats de la Recherche (D.I.S..)</a></span></li><li id="item-143" class="accordeonck item-143 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/secretariat-general-s-g" >Secrétariat Général (S.G.)</a></span></li><li id="item-141" class="accordeonck item-141 level1 " data-level="1"><span class="accordeonck_outer "><a class="accordeonck " href="/index.php/fr/divisions/departement-des-equipements-scientifiques-et-essais-et-mesures-d-e-s-e-m" >Département des Equipements Scientifiques et Essais et Mesures (D.E.S.E.M.)</a></span></li></ul></div>
+
+
+				</div>
+
+				
+			</div>
+
+		</div>
+
+		
+	</div>
+
+</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 ">
+						<div class="menu-footer">		<div class="moduletable">
+							<h2 class="titre-modules-h2">Menu</h2>
+						<ul class="nav menu">
+<li class="item-169"><a href="/index.php/fr/presentation-du-cgs" >Présentation du CGS</a></li><li class="item-170"><a href="/index.php/fr/missions" >Missions</a></li><li class="item-171"><a href="/index.php/fr/formations-1" >Formations</a></li><li class="item-172"><a href="/index.php/fr/produits-1" >Produits</a></li><li class="item-176"><a href="/index.php/fr/prestations" >Prestations</a></li><li class="item-173"><a href="/index.php/fr/reseau-accelerometriques-1" >Réseau accéléromètriques</a></li></ul>
+		</div>
+	</div>
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="text-footer">		<div class="moduletable">
+							<h2 class="titre-modules-h2">Contactez nous</h2>
+						
+
+<div class="custom"  >
+	<ul>
+<li>Centre National De Recherche Appliquée En Genie Parasismique<br /> Rue Kaddour Rahim Prolongée B.P.252<br /> Hussein day - ALGER</li>
+<li><strong>Tel</strong> : 023 77 58 15/26</li>
+<li><strong>Fax</strong> : 023772323</li>
+<li><strong>Email</strong> : <a href="mailto:cgsd@cgs.dz">cgsd@cgs-dz.org</a></li>
+</ul></div>
+		</div>
+	</div>
+					</div>
+
+					<div class="col-sm-4 ">
+								<div class="moduletable">
+							<h3>                                NOTRE SIEGE</h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p> </p>
+<p style="text-align: center;"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.2519320449196!2d3.0945799768186877!3d36.73990288877735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad5515c1e31d%3A0x607e40d303e1a9e1!2sCGS%20-%20CENTRE%20NATIONAL%20DE%20RECHERCHE%20APPLIQUEE%20EN%20GENIE%20PARASISMIQUE!5e0!3m2!1sfr!2sdz!4v1712056694554!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p></div>
+		</div>
+			<div class="moduletable">
+							<h3>NOTRE LABORATOIRE </h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102328.66308134266!2d2.891421604218567!3d36.72806737271475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128faf3134f48d3b%3A0xafa6adaf11a6d3ca!2sCGS%2C%20Laboratory!5e0!3m2!1sfr!2sdz!4v1712130920343!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p></div>
+		</div>
+	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="resaux-sociaux"><ul class="nav menu">
+<li class="item-151"><a href="https://www.facebook.com/profile.php?id=61566052306957" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/facebook-icon.png" alt="facebook" /></a></li><li class="item-152"><a href="https://twitter.com/" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/twitter-icon.png" alt="Twitter" /></a></li><li class="item-153"><a href="http://linkedin.com/" class="reseau-social" target="_blank" rel="noopener noreferrer"><img src="/images/icons/linkedin-icon.png" alt="Linkedin" /></a></li><li class="item-154"><a href="https://youtube.com/@CGSRECHERCHEPARASISMIQUE/videos" class="reseau-social" onclick="window.open(this.href, &#039;targetWindow&#039;, &#039;toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,&#039;); return false;"><img src="/images/icons/youtube-icon.png" alt="Youtube" /></a></li></ul>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-left">
+						<p>© 2018 - Tous droits réservés - CGS</p>
+					</div>
+
+					<div class="col-md-6 text-right">
+						<p>Conception et Développement : <a href="http://alcomnet.com/" ><b>Alcomnet</b></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

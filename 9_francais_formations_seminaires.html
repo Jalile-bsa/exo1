@@ -1,0 +1,1335 @@
+
+<!DOCTYPE html>
+<html lang="ar-AA" dir="rtl">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/templates/cgs/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/templates/cgs/css/template.css">
+	<script src="/templates/cgs/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/wow.min.js" type="text/javascript"></script>
+	<script src="/templates/cgs/js/jquery.dataTables.min" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
+	<script src="/templates/cgs/js/app.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<base href="http://www.cgs-dz.org/index.php/ar/9-francais/formations-seminaires" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Centre National de Recherche Appliquée en Génie Parasismique" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Formations &amp; Séminaires</title>
+	<link href="/index.php/ar/9-francais/formations-seminaires?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+	<link href="/index.php/ar/9-francais/formations-seminaires?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+	<link href="/media/system/css/modal.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<link href="/media/djmediatools/css/slideshow_4df4ad13aeb66433f7f0c7e92f58ca5c.css" rel="stylesheet" type="text/css" />
+	<link href="/media/mod_languages/css/template.css?ae3e17f0b0eee528b10f02aac449c3c8" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"99182e9b4784aab237bd2102d42fa105","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-core.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?ae3e17f0b0eee528b10f02aac449c3c8" type="text/javascript"></script>
+	<script src="/media/djextensions/picturefill/picturefill.min.js" type="text/javascript" defer="defer"></script>
+	<script src="/media/djextensions/jquery-easing/jquery.easing.min.js" type="text/javascript" defer="defer"></script>
+	<script src="/components/com_djmediatools/layouts/slideshow/js/slideshow.js?v=2.8.0" type="text/javascript" defer="defer"></script>
+	<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		jQuery(document).ready(function(){ if(!this.DJSlideshow17m188) this.DJSlideshow17m188 = new DJImageSlideshow('dj-slideshow17m188',{autoplay: 1,pause_autoplay: 1,transition: 'easeInOutExpo',duration: 400,delay: 6400,slider_type: 'left',desc_effect: 'fade',width: 700,height: 450,spacing: 1,navi_margin: 10,preload: 0,wcag: 1}) });
+	</script>
+
+<link rel="stylesheet" type="text/css" href="http://www.cgs-dz.org/media/nextend/n2-ss-9/n2-ss-9.css?1790762918" media="screen, print" />
+<style type="text/css">.n2-ss-spinner-infinite-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.n2-ss-spinner-infinite-white {
+    outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+.n2-ss-spinner-infinite-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.n2-ss-spinner-infinite-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-top-color: rgba(0, 0, 0, .6);
+    animation: n2InfiniteWhite .6s linear infinite;
+    -webkit-animation: n2InfiniteWhite .6s linear infinite;
+}
+@keyframes n2InfiniteWhite {
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes n2InfiniteWhite {
+    to {-webkit-transform: rotate(360deg);}
+}</style><script type="text/javascript">window.nextend={localization:{},deferreds:[],loadScript:function(url){n2jQuery.ready(function(){nextend.deferreds.push(n2.ajax({url:url,dataType:"script",cache:true,error:function(){console.log(arguments)}}))})},ready:function(cb){n2.when.apply(n2,nextend.deferreds).done(function(){cb.call(window,n2)})}};nextend.fontsLoaded=false;nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true};var fontData={google:{families:["Montserrat:400","Arimo:400:latin"]},active:function(){nextend.fontsLoadedActive()},inactive:function(){nextend.fontsLoadedActive()}};if(typeof WebFontConfig!=='undefined'){var _WebFontConfig=WebFontConfig;for(var k in WebFontConfig){if(k=='active'){fontData.active=function(){nextend.fontsLoadedActive();_WebFontConfig.active()}}else if(k=='inactive'){fontData.inactive=function(){nextend.fontsLoadedActive();_WebFontConfig.inactive()}}else if(k=='google'){if(typeof WebFontConfig.google.families!=='undefined'){for(var i=0;i<WebFontConfig.google.families.length;i++){fontData.google.families.push(WebFontConfig.google.families[i])}}}else{fontData[k]=WebFontConfig[k]}}}if(typeof WebFont==='undefined'){window.WebFontConfig=fontData}else{WebFont.load(fontData)}</script><script type="text/javascript" src="http://www.cgs-dz.org/media/nextend/n2/n2.js?1573055236"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/libraries/nextend2/nextend/media/dist/nextend-gsap.min.js?1531898294"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/libraries/nextend2/nextend/media/dist/nextend-frontend.min.js?1531898294"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/libraries/nextend2/smartslider/media/dist/smartslider-frontend.min.js?1531898290"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/libraries/nextend2/smartslider/media/plugins/type/simple/simple/dist/smartslider-simple-type-frontend.min.js?1531898290"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/libraries/nextend2/nextend/media/dist/nextend-webfontloader.min.js?1531898294"></script>
+<script type="text/javascript" src="http://www.cgs-dz.org/media/nextend/n2-ss-9/n2-ss-9.js?1790762918"></script>
+<script type="text/javascript">window.n2jQuery.ready((function($){window.nextend.ready(function(){nextend.fontsDeferred=n2.Deferred();if(nextend.fontsLoaded){nextend.fontsDeferred.resolve()}else{nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true;nextend.fontsDeferred.resolve()};var intercalCounter=0;nextend.fontInterval=setInterval(function(){if(intercalCounter>3||document.documentElement.className.indexOf('wf-active')!==-1){nextend.fontsLoadedActive();clearInterval(nextend.fontInterval)}intercalCounter++},1000)}new NextendSmartSliderSimple('#n2-ss-9',{"admin":false,"isStaticEdited":0,"translate3d":1,"callbacks":"","randomize":{"randomize":0,"randomizeFirst":0},"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"responsive":{"desktop":1,"tablet":1,"mobile":1,"onResizeEnabled":true,"type":"auto","downscale":1,"upscale":1,"minimumHeight":0,"maximumHeight":3000,"maximumSlideWidth":3000,"maximumSlideWidthLandscape":3000,"maximumSlideWidthTablet":3000,"maximumSlideWidthTabletLandscape":3000,"maximumSlideWidthMobile":3000,"maximumSlideWidthMobileLandscape":3000,"maximumSlideWidthConstrainHeight":0,"forceFull":0,"constrainRatio":1,"verticalOffsetSelectors":"","focusUser":0,"focusAutoplay":0,"deviceModes":{"desktopPortrait":1,"desktopLandscape":0,"tabletPortrait":1,"tabletLandscape":0,"mobilePortrait":1,"mobileLandscape":0},"normalizedDeviceModes":{"unknownUnknown":["unknown","Unknown"],"desktopPortrait":["desktop","Portrait"],"desktopLandscape":["desktop","Portrait"],"tabletPortrait":["tablet","Portrait"],"tabletLandscape":["tablet","Portrait"],"mobilePortrait":["mobile","Portrait"],"mobileLandscape":["mobile","Portrait"]},"verticalRatioModifiers":{"unknownUnknown":1,"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"minimumFontSizes":{"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"ratioToDevice":{"Portrait":{"tablet":0.6999368288060644,"mobile":0.4996841440303222},"Landscape":{"tablet":0,"mobile":0}},"sliderWidthToDevice":{"desktopPortrait":1583,"desktopLandscape":1583,"tabletPortrait":1108,"tabletLandscape":0,"mobilePortrait":791,"mobileLandscape":0},"basedOn":"combined","tabletPortraitScreenWidth":800,"mobilePortraitScreenWidth":440,"tabletLandscapeScreenWidth":800,"mobileLandscapeScreenWidth":440,"orientationMode":"width_and_height","scrollFix":0,"overflowHiddenPage":0},"controls":{"scroll":0,"drag":1,"touch":"horizontal","keyboard":1,"tilt":0},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":5000,"autoplayToSlide":-1,"autoplayToSlideIndex":-1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":"0","mediaEnded":1,"slidechanged":0}},"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"postBackgroundAnimations":0,"initCallbacks":["new NextendSmartSliderHeadingItemSplitText(arguments[0], \"n2-ss-9item8\", \"50% 50% 0px\", \"visible\",  {\"name\":\"Static\",\"data\":{\"mode\":\"chars\",\"sort\":\"normal\",\"duration\":0.4,\"stagger\":0.05,\"ease\":\"easeOutCubic\",\"opacity\":0,\"scale\":1,\"x\":0,\"y\":0,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},0, false, 0);","new NextendSmartSliderHeadingItemSplitText(arguments[0], \"n2-ss-9item13\", \"50% 50% 0px\", \"visible\",  {\"name\":\"Static\",\"data\":{\"mode\":\"chars\",\"sort\":\"normal\",\"duration\":0.4,\"stagger\":0.05,\"ease\":\"easeOutCubic\",\"opacity\":0,\"scale\":1,\"x\":0,\"y\":0,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},0, false, 0);","new NextendSmartSliderHeadingItemSplitText(arguments[0], \"n2-ss-9item18\", \"50% 50% 0px\", \"visible\",  {\"name\":\"Static\",\"data\":{\"mode\":\"chars\",\"sort\":\"normal\",\"duration\":0.4,\"stagger\":0.05,\"ease\":\"easeOutCubic\",\"opacity\":0,\"scale\":1,\"x\":0,\"y\":0,\"rotationX\":0,\"rotationY\":0,\"rotationZ\":0}},0, false, 0);"],"bgAnimations":{"global":[{"type":"Flat","tiles":{"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":1,"zIndex":2,"current":{"ease":"easeOutCubic","opacity":0}}}],"speed":"normal"},"mainanimation":{"type":"horizontal","duration":500,"delay":0,"ease":"easeOutQuad","parallax":1,"shiftedBackgroundAnimation":"auto"},"carousel":1,"dynamicHeight":0});new NextendSmartSliderWidgetArrowImage("n2-ss-9",1,0.7,0.5);new NextendSmartSliderWidgetBulletTransition("n2-ss-9",{"overlay":false,"area":10,"thumbnails":[],"action":"click","numeric":0})})}));</script></head>
+
+
+<body id="default">
+
+<div class="training">
+<a href="/index.php/ar/9-francais/formations-seminaires">Formations</a>
+</div>
+
+	<!-- Modal Login-->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Connexion</h4>
+				</div>
+				<div class="modal-body">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Demande -->
+	<div class="modal fade" id="demande-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Demandez</h4>
+				</div>
+				<div class="modal-body ">
+					<p>Pour effectuer une demande  il faut avoir un compte validé  sur notre site</p><a class='link' href='index.php?option=com_users&view=registration' ><b>Créer un compte</b></a><br/><a class='link' href='index.php?option=com_users&view=login' ><b>Connexion</b></a>				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll"><a href="#" class="ion-arrow-up-b"></a></div>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<!---->
+						<ul class="lang-site">
+							<li><a href="#" >E</a></li>
+							<li><a href="#" >ا</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-9">
+						<div class="content-header ">
+							<div class="rechercher">
+								<div class="rechercher-btn">
+									<i class="ion-ios-search"></i>
+									<div class="rechercher-form">
+
+
+
+										<form method="post" action="" class="rechercher-form-j">
+											<input id="search-searchword" type="text" name="searchword" placeholder="Rechercher"  value="">
+											<input type="hidden" name="task" value="search" />
+                   							<input type="hidden" name="option" value="com_search" />
+                   							<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+										</form>
+
+
+
+                 
+
+
+									</div>
+								</div>
+								<div class="close-input">
+									<i class="ion-ios-close-empty"></i>
+								</div>
+							</div>
+
+							<nav class="menu-secondaire">
+															<a href="#" id="login" data-toggle="modal" data-target="#login-modal">Connexion</a>
+								<div class="mod-languages">
+
+	<ul class="lang-inline">
+						<li class="lang-active" dir="rtl">
+			<a href="/index.php/ar/9-francais/formations-seminaires">
+												<img src="/media/mod_languages/images/ar_aa.gif" alt="Arabic (اللغة العربية)" title="Arabic (اللغة العربية)" />										</a>
+			</li>
+								<li dir="ltr">
+			<a href="/index.php/fr/">
+												<img src="/media/mod_languages/images/fr_fr.gif" alt="Français (France)" title="Français (France)" />										</a>
+			</li>
+								<li dir="ltr">
+			<a href="/index.php/en/">
+												<img src="/media/mod_languages/images/en_gb.gif" alt="English (United Kingdom)" title="English (United Kingdom)" />										</a>
+			</li>
+				</ul>
+
+</div>
+
+							</nav>
+							<div class="stop-float"></div>
+						</div>
+					</div>
+				</div>
+				<div class="rechercher-mob text-center">
+					<form action="" >
+						<input type="text" name="searchword" placeholder="Rechercher">
+						<input type="hidden" name="task" value="search" />
+                   		<input type="hidden" name="option" value="com_search" />
+                   		<a href="#" onclick="jquery(this).parent('form').submit();" class="ok"></a>
+					</form>
+
+					<div>
+						<i class="ion-ios-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="info-header text-center">
+								<p> <p>الجمهورية الجزائرية الديمقراطية الشعبية 
+                                <p>وزارة السكـــــن و العمران و المدينة و التهيئة العمرانية
+                                   <p>République Algérienne Démocratique et Populaire</p>
+								<p>Ministère de l'Habitat, de l'Urbanisme , de la Ville et de l'aménagement du territoire</p>
+                   <p>People's Democratic Republic of Algeria</p>  
+                          <p>Ministry of Housing, Urban Planning, Cities and Territorial Development</p>        
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-logo-nav">
+				<div class="logo-nav">
+					<div class="content-logo">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									<a href="http://www.cgs-dz.org/" class="logo ">
+										<img  class="img-responsive" src="http://www.cgs-dz.org/templates/cgs/images/logo-cgs.png" alt="Centre National de Recherche Appliquée en Génie Parasismique">
+									</a>                                     
+                                    <div class="info-header text-center">
+                                     <p>National Earthquake Engineering Research Center </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contant-nav-pre">
+						<div class="contant-nav">
+							<div class="container">
+								<div class="row">
+									<nav class="menu-principal ">
+										<ul class="nav menu">
+<li class="item-263 default current active deeper parent"><a href="/index.php/ar/" >الرئيسية</a><ul class="nav-child unstyled small"><li class="item-265"><a href="/index.php/ar/2026-05-19-10-39-50/2026-05-19-12-19-37" >رسالة من مدير المركز</a></li></ul></li><li class="item-264 deeper parent"><a href="/index.php/ar/2026-05-19-11-16-07" >المركز</a><ul class="nav-child unstyled small"><li class="item-269"><a href="/index.php/ar/2026-05-19-11-16-07/cgs" >CGS تقديم ملخض للمركز   </a></li><li class="item-270"><a href="/index.php/ar/2026-05-19-11-16-07/2026-05-21-07-04-17" >تقديم المخابر</a></li></ul></li><li class="item-278 deeper parent"><a href="/" >أنشطة المركز</a><ul class="nav-child unstyled small"><li class="item-280"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-00-26" >أنشطة المديرية</a></li><li class="item-281"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-18-02-bis" >أنشطة الباحث</a></li><li class="item-282"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-21-51" >أنشطة مختلفة</a></li></ul></li><li class="item-285"><a href="/index.php/ar/1996-30-2026" >مشاريع البحث </a></li><li class="item-287"><a href="/index.php/ar/2026-09-03-10-09-39" >دراسات متنوعة</a></li></ul>
+
+									</nav>
+									<div class="mob">
+										<a class="bt-mobile" href="#">
+											<i class="icon ion-navicon"></i>
+										</a>
+
+										<div class="menu-principal-mobile">
+											<ul class="nav menu">
+<li class="item-263 default current active deeper parent"><a href="/index.php/ar/" >الرئيسية</a><ul class="nav-child unstyled small"><li class="item-265"><a href="/index.php/ar/2026-05-19-10-39-50/2026-05-19-12-19-37" >رسالة من مدير المركز</a></li></ul></li><li class="item-264 deeper parent"><a href="/index.php/ar/2026-05-19-11-16-07" >المركز</a><ul class="nav-child unstyled small"><li class="item-269"><a href="/index.php/ar/2026-05-19-11-16-07/cgs" >CGS تقديم ملخض للمركز   </a></li><li class="item-270"><a href="/index.php/ar/2026-05-19-11-16-07/2026-05-21-07-04-17" >تقديم المخابر</a></li></ul></li><li class="item-278 deeper parent"><a href="/" >أنشطة المركز</a><ul class="nav-child unstyled small"><li class="item-280"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-00-26" >أنشطة المديرية</a></li><li class="item-281"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-18-02-bis" >أنشطة الباحث</a></li><li class="item-282"><a href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-21-51" >أنشطة مختلفة</a></li></ul></li><li class="item-285"><a href="/index.php/ar/1996-30-2026" >مشاريع البحث </a></li><li class="item-287"><a href="/index.php/ar/2026-09-03-10-09-39" >دراسات متنوعة</a></li></ul>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+<div class="inner_page">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<div>
+<!-- Nextend Smart Slider 3 #9 - BEGIN -->
+<div id="n2-ss-9-align" class="n2-ss-align"><div class="n2-padding"><div id="n2-ss-9" class="n2-ss-slider n2notransition n2-ss-load-fade " data-minFontSizedesktopPortrait="1" data-minFontSizedesktopLandscape="1" data-minFontSizetabletPortrait="1" data-minFontSizetabletLandscape="1" data-minFontSizemobilePortrait="1" data-minFontSizemobileLandscape="1" style="font-size: 16px;" data-fontsize="16">
+        <div class="n2-ss-slider-1" style="">
+                        <div class="n2-ss-slider-2">
+                                    <div class="n2-ss-background-animation"></div>
+                                <div class="n2-ss-slider-3" style="">
+
+                    <div data-slide-duration="0" data-id="1246" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-active n2-ss-slide-1246" style=""><div data-hash="b9a31d3949b1882a09ed2f8508d538f3" data-desktop="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="20" data-y="20" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:center;left:367px;top:-172px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="367" data-desktopportraittop="-172" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-4e545987c2609983f199e7a839f2758a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:center;left:-162px;top:-152px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-162" data-desktopportraittop="-152" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-4e545987c2609983f199e7a839f2758a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/kalimat-el-moudir">رسالة المدير</a></div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:left;left:-168px;top:39px;width:266px;height:292px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-168" data-desktopportraittop="39" data-desktopportraitwidth="266" data-desktopportraitheight="292" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="" style="overflow:hidden;"><img src="//www.cgs-dz.org/images/photo-BECHTOULA.jpg" id="n2-ss-9item3" alt="Image is not available" style="display: inline-block; max-width: 100%; width: 100%;height: auto;" class=" n2-ow" title="" /></div></div></div></div><div data-slide-duration="0" data-id="1512" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1512" style=""><div data-hash="454d3b6f5ce02034fed1d2779135f800" data-desktop="//www.cgs-dz.org/images/Vulgrpa2024alger.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><div class="n2-ss-slide-background-image n2-ss-slide-tile" style="background-image: url(//www.cgs-dz.org/images/Vulgrpa2024alger.jpg);opacity:1;background-position: 50% 50%;"></div></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:0px;top:0px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="0" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item4" class="n2-font-1009-hover   n2-ow" style="display:block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:-734px;top:0px;width:487px;height:128px;" data-animations="eyJzcGVjaWFsWmVybyI6MCwidHJhbnNmb3JtT3JpZ2luIjoiNTB8Knw1MHwqfDAiLCJpbiI6W3sibmFtZSI6IkZhZGUiLCJkdXJhdGlvbiI6MTAsImVhc2UiOiJlYXNlT3V0RXhwbyIsIm9wYWNpdHkiOjB9XX0=" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-734" data-desktopportraittop="0" data-desktopportraitwidth="487" data-desktopportraitheight="128" data-desktopportraitalign="right" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="125"><div class="n2-ss-mobile"><p class="n2-font-c0e434c2fbc91dd330d74b472ee95ce8-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow"><b></b></p>
+</div><div class="n2-ss-desktop n2-ss-tablet"><p class="n2-font-c0e434c2fbc91dd330d74b472ee95ce8-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow">CTP أمام اللجنة التقنية CGS</p>
+</div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:center;left:192px;top:-163px;width:141px;height:81px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="192" data-desktopportraittop="-163" data-desktopportraitwidth="141" data-desktopportraitheight="81" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-88eb69a5e6fabba746c5612e6b77d01a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:center;left:-86px;top:-107px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-86" data-desktopportraittop="-107" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-a25346852e58a0bdf6d271c96839c138-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-0a9c09c503e97d5140137f2a69699bb0-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/382-ctp-cgs">المزيد</a></div></div></div></div><div data-slide-duration="0" data-id="1279" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1279" style=""><div data-hash="cc29bb6de0a52e41ebf7c05d63b26bd1" data-desktop="//www.cgs-dz.org/images/CGSpresentation.PNG" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/CGSpresentation.PNG" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:6px;top:0px;width:auto;height:288px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="6" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="288" data-desktopportraitalign="right" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item8" class="n2-font-3e0d6d63879f3504d4494d51f7f45349-hover n2-style-95159513ba65a38f78fd0167af3d9423-heading   n2-ow" style="display:inline-block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:center;left:521px;top:-136px;width:161px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="521" data-desktopportraittop="-136" data-desktopportraitwidth="161" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-52ebfa785f4f5795f6223a07171dcc4b-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:left;left:248px;top:176px;width:257px;height:54px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="248" data-desktopportraittop="176" data-desktopportraitwidth="257" data-desktopportraitheight="54" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><span style="display:inline-block;vertical-align:top;width:100%;height:100%;background: url() no-repeat;background-size:cover;background-position: 50% 50%;"></span></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:left;left:-370px;top:45px;width:802px;height:158px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-370" data-desktopportraittop="45" data-desktopportraitwidth="802" data-desktopportraitheight="158" data-desktopportraitalign="right" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-06e81d5969ce5b3bc0a96a4e9c77d84c-paragraph  n2-style-02ed12c2f2a43d8776a1322c31a1663a-heading  n2-ow">  حفل استقبال وتنصيب للباحثين الجدد. تقدم الدكتور رؤوف بن شريف (مهندس باحث) عرضاً عاماً حول المركز</p>
+</div></div><div class="n2-ss-layer" style="z-index:5;overflow:visible;text-align:center;left:-143px;top:-80px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-143" data-desktopportraittop="-80" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-74b2edc7934418fc8935482d143a896f-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/379-cgs">القائمة النهائية </a></div></div></div></div><div data-slide-duration="0" data-id="1509" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1509" style=""><div data-hash="5980e156aafb66a1afbc1fafc3b66f77" data-desktop="//www.cgs-dz.org/images/cgs.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/cgs.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:6px;top:0px;width:auto;height:288px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="6" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="288" data-desktopportraitalign="right" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item13" class="n2-font-3e0d6d63879f3504d4494d51f7f45349-hover n2-style-95159513ba65a38f78fd0167af3d9423-heading   n2-ow" style="display:inline-block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:center;left:521px;top:-136px;width:161px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="521" data-desktopportraittop="-136" data-desktopportraitwidth="161" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-52ebfa785f4f5795f6223a07171dcc4b-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:left;left:248px;top:176px;width:257px;height:54px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="248" data-desktopportraittop="176" data-desktopportraitwidth="257" data-desktopportraitheight="54" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><span style="display:inline-block;vertical-align:top;width:100%;height:100%;background: url() no-repeat;background-size:cover;background-position: 50% 50%;"></span></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:left;left:-390px;top:45px;width:802px;height:158px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-390" data-desktopportraittop="45" data-desktopportraitwidth="802" data-desktopportraitheight="158" data-desktopportraitalign="right" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-7dfc0119d60c3599cbc15d644fbf28f4-paragraph  n2-style-842b110f23ea4b701a90bfb9347314ac-heading  n2-ow">توظيف الموظفين. قائمة المرشحين المقبولين.<br />
+القائمة النهائية للمرشحين الذين تم توظيفهم متاحة أدناه:</p>
+</div></div><div class="n2-ss-layer" style="z-index:5;overflow:visible;text-align:center;left:90px;top:-30px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="90" data-desktopportraittop="-30" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-74b2edc7934418fc8935482d143a896f-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/368-2026-08-11-09-13-38">القائمة النهائية </a></div></div></div></div><div data-slide-duration="0" data-id="1504" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1504" style=""><div data-hash="5980e156aafb66a1afbc1fafc3b66f77" data-desktop="//www.cgs-dz.org/images/cgs.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/cgs.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:6px;top:0px;width:auto;height:288px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="6" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="288" data-desktopportraitalign="right" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item18" class="n2-font-3e0d6d63879f3504d4494d51f7f45349-hover n2-style-95159513ba65a38f78fd0167af3d9423-heading   n2-ow" style="display:inline-block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:center;left:521px;top:-136px;width:161px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="521" data-desktopportraittop="-136" data-desktopportraitwidth="161" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-52ebfa785f4f5795f6223a07171dcc4b-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:left;left:248px;top:176px;width:257px;height:54px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="248" data-desktopportraittop="176" data-desktopportraitwidth="257" data-desktopportraitheight="54" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><span style="display:inline-block;vertical-align:top;width:100%;height:100%;background: url() no-repeat;background-size:cover;background-position: 50% 50%;"></span></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:left;left:-440px;top:27px;width:802px;height:158px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-440" data-desktopportraittop="27" data-desktopportraitwidth="802" data-desktopportraitheight="158" data-desktopportraitalign="right" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-01d00ab83decd55ac615428e01518b4e-paragraph  n2-style-99e1aadcb7c1892964418b86ce8d14e0-heading  n2-ow"> الدكتور توفيق أوزنجة في البرنامج الدولي  في جنيف، سويسرا</p>
+</div></div><div class="n2-ss-layer" style="z-index:5;overflow:visible;text-align:center;left:-15px;top:-98px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-15" data-desktopportraittop="-98" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-74b2edc7934418fc8935482d143a896f-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/375-cerg-c-2026">اقرأ المزيدا</a></div></div></div></div><div data-slide-duration="0" data-id="1496" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1496" style=""><div data-hash="10b912bb5c96cab34d7855eba925dba6" data-desktop="//www.cgs-dz.org/images/ligue-arabe-2026.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fit n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/ligue-arabe-2026.jpg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:0px;top:0px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="0" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item23" class="n2-font-1009-hover   n2-ow" style="display:block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:399px;top:243px;width:907px;height:128px;" data-animations="eyJzcGVjaWFsWmVybyI6MCwidHJhbnNmb3JtT3JpZ2luIjoiNTB8Knw1MHwqfDAiLCJpbiI6W3sibmFtZSI6IkZhZGUiLCJkdXJhdGlvbiI6MTAsImVhc2UiOiJlYXNlT3V0RXhwbyIsIm9wYWNpdHkiOjB9XX0=" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="399" data-desktopportraittop="243" data-desktopportraitwidth="907" data-desktopportraitheight="128" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="125"><div class="n2-ss-mobile"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow"><b></b></p>
+</div><div class="n2-ss-desktop n2-ss-tablet"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow">المركز في  ورشة العمل الإقليمية حول المرونة الحضرية</p>
+</div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:center;left:505px;top:-9px;width:134px;height:81px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="505" data-desktopportraittop="-9" data-desktopportraitwidth="134" data-desktopportraitheight="81" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-88eb69a5e6fabba746c5612e6b77d01a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:center;left:466px;top:71px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="466" data-desktopportraittop="71" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-0d4623cb3f3398107c26fa8c80f4d270-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/364-2026-07-20-08-05-44">المزيد</a></div></div></div></div><div data-slide-duration="0" data-id="1249" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1249" style=""><div data-hash="454d3b6f5ce02034fed1d2779135f800" data-desktop="//www.cgs-dz.org/images/Vulgrpa2024alger.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><div class="n2-ss-slide-background-image n2-ss-slide-tile" style="background-image: url(//www.cgs-dz.org/images/Vulgrpa2024alger.jpg);opacity:1;background-position: 50% 50%;"></div></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:0px;top:0px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="0" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item27" class="n2-font-1009-hover   n2-ow" style="display:block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:362px;top:0px;width:1205px;height:128px;" data-animations="eyJzcGVjaWFsWmVybyI6MCwidHJhbnNmb3JtT3JpZ2luIjoiNTB8Knw1MHwqfDAiLCJpbiI6W3sibmFtZSI6IkZhZGUiLCJkdXJhdGlvbiI6MTAsImVhc2UiOiJlYXNlT3V0RXhwbyIsIm9wYWNpdHkiOjB9XX0=" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="362" data-desktopportraittop="0" data-desktopportraitwidth="1205" data-desktopportraitheight="128" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="125"><div class="n2-ss-mobile"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow"><b></b></p>
+</div><div class="n2-ss-desktop n2-ss-tablet"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow">اللجنة الوطنية لتعزيز البنية التحتية</p>
+</div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:center;left:234px;top:-152px;width:134px;height:81px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="234" data-desktopportraittop="-152" data-desktopportraitwidth="134" data-desktopportraitheight="81" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-88eb69a5e6fabba746c5612e6b77d01a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:center;left:-82px;top:-106px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-82" data-desktopportraittop="-106" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-0d4623cb3f3398107c26fa8c80f4d270-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-25-09-52-53/2026-05-25-10-00-26/287-2026-04-22-09-17-43">المزيد</a></div></div></div></div><div data-slide-duration="0" data-id="1247" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1247" style=""><div data-hash="92713f350eeec7d65e941de6e603f593" data-desktop="//www.cgs-dz.org/images/Formation--Tunis.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><div class="n2-ss-slide-background-image n2-ss-slide-tile" style="background-image: url(//www.cgs-dz.org/images/Formation--Tunis.jpg);opacity:1;background-position: 50% 50%;"></div></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:0px;top:0px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="0" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item31" class="n2-font-1009-hover   n2-ow" style="display:block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:308px;top:-15px;width:806px;height:126px;" data-animations="eyJzcGVjaWFsWmVybyI6MCwidHJhbnNmb3JtT3JpZ2luIjoiNTB8Knw1MHwqfDAiLCJpbiI6W3sibmFtZSI6IkZhZGUiLCJkdXJhdGlvbiI6MTAsImVhc2UiOiJlYXNlT3V0RXhwbyIsIm9wYWNpdHkiOjB9XX0=" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="308" data-desktopportraittop="-15" data-desktopportraitwidth="806" data-desktopportraitheight="126" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="125"><div class="n2-ss-mobile"><p class="n2-font-a409a653a066636119ed81032b47ebe3-paragraph  n2-style-5a78756c40bd88bf6b7993db1e197935-heading  n2-ow"><b></b></p>
+</div><div class="n2-ss-desktop n2-ss-tablet"><p class="n2-font-a409a653a066636119ed81032b47ebe3-paragraph  n2-style-5a78756c40bd88bf6b7993db1e197935-heading  n2-ow">تدريب الاطارات التونسيين  من طرف الدكتوران مزوار وبن شريف</p>
+</div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:center;left:402px;top:-189px;width:138px;height:46px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="402" data-desktopportraittop="-189" data-desktopportraitwidth="138" data-desktopportraitheight="46" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-88eb69a5e6fabba746c5612e6b77d01a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:center;left:-532px;top:-185px;width:97px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-532" data-desktopportraittop="-185" data-desktopportraitwidth="97" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-f9827198f08b2d4cf3b5064901f8ac52-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/358-2026-06-24-06-58-50">المزيد</a></div></div></div></div><div data-slide-duration="0" data-id="1494" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1494" style=""><div data-hash="454d3b6f5ce02034fed1d2779135f800" data-desktop="//www.cgs-dz.org/images/Vulgrpa2024alger.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><div class="n2-ss-slide-background-image n2-ss-slide-tile" style="background-image: url(//www.cgs-dz.org/images/Vulgrpa2024alger.jpg);opacity:1;background-position: 50% 50%;"></div></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:0px;top:0px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="0" data-desktopportraittop="0" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><h2 id="n2-ss-9item35" class="n2-font-1009-hover   n2-ow" style="display:block;"></h2></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:362px;top:0px;width:1205px;height:128px;" data-animations="eyJzcGVjaWFsWmVybyI6MCwidHJhbnNmb3JtT3JpZ2luIjoiNTB8Knw1MHwqfDAiLCJpbiI6W3sibmFtZSI6IkZhZGUiLCJkdXJhdGlvbiI6MTAsImVhc2UiOiJlYXNlT3V0RXhwbyIsIm9wYWNpdHkiOjB9XX0=" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="362" data-desktopportraittop="0" data-desktopportraitwidth="1205" data-desktopportraitheight="128" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="125"><div class="n2-ss-mobile"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow"><b></b></p>
+</div><div class="n2-ss-desktop n2-ss-tablet"><p class="n2-font-7ad79548e8b23f2b482ecef620daaee2-paragraph  n2-style-363e849e94c6e4b27b1103d4f2c0c484-heading  n2-ow">الدكتور فوزي غربوج في زغرب</p>
+</div></div><div class="n2-ss-layer" style="z-index:3;overflow:visible;text-align:center;left:234px;top:-152px;width:134px;height:81px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="234" data-desktopportraittop="-152" data-desktopportraitwidth="134" data-desktopportraitheight="81" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-88eb69a5e6fabba746c5612e6b77d01a-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-e749949762be3ecb4a52da43ff408426-heading  " onclick="return false;" target="_self" href="#">وقفة</a></div></div><div class="n2-ss-layer" style="z-index:4;overflow:visible;text-align:center;left:-82px;top:-106px;width:auto;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-82" data-desktopportraittop="-106" data-desktopportraitwidth="auto" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="nextend-smartslider-button-container n2-font-0d4623cb3f3398107c26fa8c80f4d270-link " style="cursor: pointer; display:inline-block;white-space:nowrap;"><a style="display:inline-block;" class="n2-style-1101-heading  " target="_self" href="/index.php/ar/2026-05-19-11-16-07/363-2026-07-19-09-00-40">المزيد</a></div></div></div></div><div data-slide-duration="0" data-id="1448" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1448" style=""><div data-hash="0a3805bc5f0879e4d671a898594387fb" data-desktop="//www.cgs-dz.org/images/slider3/IMG_4182.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/slider3/IMG_4182.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""></div></div><div data-slide-duration="0" data-id="1449" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1449" style=""><div data-hash="12a04c6a88044dce5bca335d1fa580a8" data-desktop="//www.cgs-dz.org/images/slider3/IMG_4187.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/slider3/IMG_4187.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""></div></div><div data-slide-duration="0" data-id="1451" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1451" style=""><div data-hash="4a81064cd1ea0f604d59f9536e511970" data-desktop="//www.cgs-dz.org/images/slider3/image1.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/slider3/image1.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""></div></div><div data-slide-duration="0" data-id="1452" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1452" style=""><div data-hash="af774ff2b416747cb271755eea1a5533" data-desktop="//www.cgs-dz.org/images/slider3/image4.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/slider3/image4.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""></div></div><div data-slide-duration="0" data-id="1455" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1455" style=""><div data-hash="fe6f51f7cc7565d8ef428afc6451c95e" data-desktop="//www.cgs-dz.org/images/image-1.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fit n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/image-1.jpg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:30px;top:176px;width:373px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="30" data-desktopportraittop="176" data-desktopportraitwidth="373" data-desktopportraitheight="auto" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="145"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-91546329e4404e698d7ce8499cb18196-paragraph  n2-style-12fa018e00dbd92a6be66420463456d3-heading  n2-ow"><b>ÉVALUATION DU RISQUE SISMIQUE</b></p>
+</div></div></div></div><div data-slide-duration="0" data-id="1456" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1456" style=""><div data-hash="43272ead6efcb8cf7b60085e77591b70" data-desktop="//www.cgs-dz.org/images/img-7.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fit n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/img-7.jpg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:77px;top:163px;width:345px;height:94px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="77" data-desktopportraittop="163" data-desktopportraitwidth="345" data-desktopportraitheight="94" data-desktopportraitalign="left" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-a8c362ef169f3ef018ecaaab71a973ad-paragraph  n2-style-12fa018e00dbd92a6be66420463456d3-heading  n2-ow">LABORATOIRE DE GÉNIE SISMIQUE<br />
+TABLE VIBRANTE<br />
+DALLE D'ESSAIS<br />
+MUR DE RÉACTION</p>
+</div></div></div></div><div data-slide-duration="0" data-id="1457" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1457" style=""><div data-hash="04fc8a9a8008b48070571c4a678ba383" data-desktop="//www.cgs-dz.org/images/img-6.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fit n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/img-6.jpg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:-840px;top:139px;width:114px;height:28px;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-840" data-desktopportraittop="139" data-desktopportraitwidth="114" data-desktopportraitheight="28" data-desktopportraitalign="right" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-tablet n2-ss-mobile"><p class="n2-font-1304-paragraph   n2-ow"><a href="/"></a><a href="/"></a></p>
+</div><div class="n2-ss-desktop"><p class="n2-font-1304-paragraph   n2-ow"><b>Table vibrante</b></p>
+</div></div><div class="n2-ss-layer" style="z-index:2;overflow:visible;text-align:left;left:-531px;top:159px;width:275px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="-531" data-desktopportraittop="159" data-desktopportraitwidth="275" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="210"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-91546329e4404e698d7ce8499cb18196-paragraph  n2-style-12fa018e00dbd92a6be66420463456d3-heading  n2-ow"><b>TABLE VIBRANTE</b></p>
+</div></div></div></div><div data-slide-duration="0" data-id="1459" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1459" style=""><div data-hash="a43b846ec80629894bc2c5b1b126f25e" data-desktop="//www.cgs-dz.org/images/slider3/IMG_4192.jpeg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fill n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/slider3/IMG_4192.jpeg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:233px;top:357px;width:505px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="0" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="233" data-desktopportraittop="357" data-desktopportraitwidth="505" data-desktopportraitheight="auto" data-desktopportraitalign="center" data-desktopportraitvalign="top" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-ecf98a896238c691a95cadc5edd786f4-paragraph  n2-style-12fa018e00dbd92a6be66420463456d3-heading  n2-ow"><b>Préparation de corps d'épreuve sur table vibrante</b></p>
+</div></div></div></div><div data-slide-duration="0" data-id="1460" class="n2-ss-slide n2-ss-canvas  n2-ss-slide-1460" style=""><div data-hash="0d23d00dec2d03c842832a6b552d7bd8" data-desktop="//www.cgs-dz.org/images/carte-du-reseau-national-daccelerographes.jpg" style="" class="n2-ss-slide-background" data-opacity="1"><img title="" style="opacity:1;" class="n2-ss-slide-background-image n2-ss-slide-fit n2-ow" data-x="50" data-y="50" src="//www.cgs-dz.org/images/carte-du-reseau-national-daccelerographes.jpg" alt="" /></div><div class="n2-ss-layers-container" style=""><div class="n2-ss-layer" style="z-index:1;overflow:visible;text-align:left;left:43px;top:12px;width:281px;height:auto;" data-class="" data-rotation="0" data-adaptivefont="0" data-generatorvisible="" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-responsiveposition="1" data-responsivesize="1" data-desktopportraitleft="43" data-desktopportraittop="12" data-desktopportraitwidth="281" data-desktopportraitheight="auto" data-desktopportraitalign="left" data-desktopportraitvalign="middle" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-desktopportraitfontsize="100"><div class="n2-ss-desktop n2-ss-mobile n2-ss-tablet"><p class="n2-font-24274d19355dd46d515210a9138fa75f-paragraph  n2-style-12fa018e00dbd92a6be66420463456d3-heading  n2-ow">CARTE DU RESEAU ACCELEROMETRIQUE</p>
+</div></div></div></div>                </div>
+            </div>
+        </div>
+        <div data-sstop="height/2-previousheight/2" id="n2-ss-9-arrow-previous" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ib nextend-arrow-animated nextend-arrow-animated-horizontal nextend-arrow-previous" style="position: absolute;left:0px;"><div class="n2-style-f00b53cae20b25b496c6bebfdf2be3f7-heading-active  n2-resize"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjY1NCA5LjQzbC02LjMyNiA2LjUyNSA2LjMyNiA2LjZjLjI0Mi4yNTMuMzYuNTQ1LjM2Ljg4IDAgLjMzMy0uMTE4LjYyNS0uMzYuODc3bC0xLjI0NCAxLjNjLS4yNC4yNS0uNTIzLjM3NS0uODQuMzc1LS4zMiAwLS42LS4xMjQtLjg0LS4zNzZsLTguMzY3LTguNzJjLS4yNC0uMjUtLjM2My0uNTQtLjM2My0uODggMC0uMzM0LjEyMi0uNjMuMzYzLS44OGw4LjM2Ny04Ljc1Yy4yMy0uMjUyLjUxLS4zNzcuODMtLjM3Ny4zMjUgMCAuNjA3LjEyNi44NS4zNzhsMS4yNDIgMS4zMjZjLjI0Mi4yNTIuMzYuNTQuMzYuODY0IDAgLjMyLS4xMTguNjEtLjM2Ljg2eiIgb3BhY2l0eT0iMC44Ii8+Cjwvc3ZnPgo=" alt="Arrow" /></div><div class="n2-style-f00b53cae20b25b496c6bebfdf2be3f7-heading-active  n2-active n2-resize"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjY1NCA5LjQzbC02LjMyNiA2LjUyNSA2LjMyNiA2LjZjLjI0Mi4yNTMuMzYuNTQ1LjM2Ljg4IDAgLjMzMy0uMTE4LjYyNS0uMzYuODc3bC0xLjI0NCAxLjNjLS4yNC4yNS0uNTIzLjM3NS0uODQuMzc1LS4zMiAwLS42LS4xMjQtLjg0LS4zNzZsLTguMzY3LTguNzJjLS4yNC0uMjUtLjM2My0uNTQtLjM2My0uODggMC0uMzM0LjEyMi0uNjMuMzYzLS44OGw4LjM2Ny04Ljc1Yy4yMy0uMjUyLjUxLS4zNzcuODMtLjM3Ny4zMjUgMCAuNjA3LjEyNi44NS4zNzhsMS4yNDIgMS4zMjZjLjI0Mi4yNTIuMzYuNTQuMzYuODY0IDAgLjMyLS4xMTguNjEtLjM2Ljg2eiIgb3BhY2l0eT0iMC44Ii8+Cjwvc3ZnPgo=" alt="Arrow" /></div></div><div data-sstop="height/2-nextheight/2" id="n2-ss-9-arrow-next" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ib nextend-arrow-animated nextend-arrow-animated-horizontal nextend-arrow-next" style="position: absolute;right:0px;"><div class="n2-style-f00b53cae20b25b496c6bebfdf2be3f7-heading-active  n2-resize"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuMjg2IDI1LjYxYy0uMjQuMjUzLS41Mi4zNzctLjg0LjM3Ny0uMzE4IDAtLjYtLjEyNC0uODQtLjM3NmwtMS4yNDUtMS4yOTdjLS4yNC0uMjUyLS4zNi0uNTQ0LS4zNi0uODc4IDAtLjMzNC4xMi0uNjI2LjM2LS44NzhsNi4zMjgtNi42TDEwLjM2IDkuNDNjLS4yNC0uMjUtLjM2LS41NC0uMzYtLjg2NCAwLS4zMjMuMTItLjYxMi4zNi0uODY0bDEuMjQ1LTEuMzI1Yy4yNC0uMjUyLjUyMy0uMzc3Ljg0OC0uMzc3LjMyMyAwIC42MDIuMTI1LjgzMy4zNzdsOC4zNjYgOC43NDZjLjI0LjI1LjM2My41NDYuMzYzLjg4MiAwIC4zNC0uMTIyLjYzNC0uMzYzLjg4NmwtOC4zNjYgOC43MnoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="Arrow" /></div><div class="n2-style-f00b53cae20b25b496c6bebfdf2be3f7-heading-active  n2-active n2-resize"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTMuMjg2IDI1LjYxYy0uMjQuMjUzLS41Mi4zNzctLjg0LjM3Ny0uMzE4IDAtLjYtLjEyNC0uODQtLjM3NmwtMS4yNDUtMS4yOTdjLS4yNC0uMjUyLS4zNi0uNTQ0LS4zNi0uODc4IDAtLjMzNC4xMi0uNjI2LjM2LS44NzhsNi4zMjgtNi42TDEwLjM2IDkuNDNjLS4yNC0uMjUtLjM2LS41NC0uMzYtLjg2NCAwLS4zMjMuMTItLjYxMi4zNi0uODY0bDEuMjQ1LTEuMzI1Yy4yNC0uMjUyLjUyMy0uMzc3Ljg0OC0uMzc3LjMyMyAwIC42MDIuMTI1LjgzMy4zNzdsOC4zNjYgOC43NDZjLjI0LjI1LjM2My41NDYuMzYzLjg4MiAwIC4zNC0uMTIyLjYzNC0uMzYzLjg4NmwtOC4zNjYgOC43MnoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="Arrow" /></div></div>
+<div data-ssleft="width/2-bulletwidth/2" data-ssbottom="0+10" data-offset="10" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-bullet-bar n2-ib nextend-bullet-bar-horizontal" style="text-align: center;position: absolute;"><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot n2-active"></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div><div class="n2-style-2a0a200d6a6e1fade27fb9c90af83812-dot "></div></div>
+</div><div class="clear"></div><div id="n2-ss-9-spinner"><div><div class="n2-ss-spinner-infinite-white-container"><div class="n2-ss-spinner-infinite-white"></div></div></div></div></div></div><div id="n2-ss-9-placeholder" style="position: relative;z-index:2;"><img style="width: 100%; max-width:3000px;" class="n2-ow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9IjE1ODMiIGhlaWdodD0iNDA3IiA+PC9zdmc+" alt="Slider" /></div>
+<!-- Nextend Smart Slider 3 #9 - END -->
+</div>
+
+			</div>
+
+		</div>
+
+		
+		<div class="row"> <!--.page-single-->
+
+			<div class="col-md-12">
+
+				<div id="system-message-container">
+	</div>
+
+
+				
+
+				<div class="blog" itemscope itemtype="https://schema.org/Blog">
+	
+	<div class="title-list-post">
+		<h2>Formations & Séminaires</h2>
+	</div>
+	
+		
+	
+	
+						<p>لا توجد مقالات في هذه المجموعة. إذا كانت المجموعة الفرعية تعرض هذه الصفحة، فإنها قد تحتوي على المقالات.</p>
+			
+		
+	
+	
+
+	
+
+	
+		
+			<div class="categorie-text">
+			<p style="text-align: center;"><span style="color: #ffffff;"> </span></p>
+<p style="text-align: center;"><span style="font-size: 18pt; background-color: #ccffcc;"><strong><span style="color: #ffffff;"><span style="background-color: #6dc5b7;"><span style="background-color: #ff9900;">BIENTÔT</span></span></span></strong></span></p>
+<p><span style="background-color: #ccffcc;"><strong>Le CGS organisera prochainement des cycles de formation intensifs sur le DTR «  Règles Parasismiques Algériennes RPA 2024 » et le DTR « Règles de conception et de calcul des fondations et soutènements ».</strong></span></p>
+<p><span style="background-color: #ccffcc;"><strong>Le public sera informé des dates et des programmes de ces formations via son site web et sa page facebook « Le CGS ».</strong></span></p>
+<p><span style="background-color: #ccffcc;"><strong>Nous vous invitons à consulter régulièrement ces plateformes.</strong></span></p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"><span style="font-size: 18pt; background-color: #ccffcc;"><strong><span style="color: #ffffff;"><span style="background-color: #6dc5b7;"> <span style="background-color: #6dc5b7;">PROGRAMME DES SEMINAIRES <br /></span></span></span></strong></span></p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<td style="width: 161px;">
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif; background-color: #ffcc00;"><strong>SEMINAIRE N° 01</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong> LES ESSAIS GEOTECHNIQUES</strong></p>
+<h5> <span style="font-size: 10pt; background-color: #ccffcc;"><strong><u>PROGRAMME</u></strong></span></h5>
+<ul>
+<li><strong>P</strong>ropriétés <strong>S</strong>tatiques et <strong>D</strong>ynamiques des <strong>S</strong>ols;</li>
+<li><strong>D</strong>ifférents <strong>T</strong>ypes d’<strong>E</strong>ssais en <strong>M</strong>écanique des <strong>S</strong>ols;</li>
+<li><strong>I</strong>nterprétation des<strong> R</strong>ésultats;</li>
+<li><strong>A</strong>nalyse du<strong> R</strong>apport d’<strong>E</strong>tude de <strong>S</strong>ol.<strong> <br /></strong></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="width: 161px;">
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: tahoma, arial, helvetica, sans-serif; background-color: #ffcc00;"><strong>SEMINAIRE N° 02</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> <strong>FONDATIONS SUPERFICIELLES </strong></p>
+<p> <span style="font-size: 10pt; background-color: #ccffcc;"><strong><u>PROGRAMME</u></strong></span></p>
+<ul>
+<li><strong>C</strong>apacité<strong> P</strong>ortante (cas général et cas particulier);</li>
+<li><strong>T</strong>assements <strong>A</strong>bsolus et <strong>D</strong>ifférentiels;</li>
+<li><strong>P</strong>athologie des <strong>F</strong>ondations (Gonflement, Fondations en Pente, ....).</li>
+</ul>
+<table style="height: 41px;" width="237">
+<tbody>
+<tr>
+<td style="width: 227px; text-align: center;"><span style="font-size: 12pt; background-color: #ffcc00;"><strong>SEMINAIRE N°03</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p><strong> FONDATIONS PROFONDES </strong></p>
+<p> <span style="font-size: 10pt; background-color: #ccffcc;"><strong><u>PROGRAMME</u></strong></span></p>
+<ul>
+<li><strong>D</strong>ifférents <strong>T</strong>ypes de <strong>F</strong>ondations (Pieux, Palplanches, Colonnes Balastées,....);</li>
+<li><strong>C</strong>apacité <strong>P</strong>ortante;</li>
+<li><strong>T</strong>assement;</li>
+<li><strong>C</strong>ontrôle de <strong>Q</strong>ualité.</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td width="163">
+<h2 style="text-align: center;"><span style="font-size: 12pt; background-color: #ffcc00;"><strong> <span style="font-family: tahoma, arial, helvetica, sans-serif;">SEMINAIRE N° 04</span></strong></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong> LIQUEFACTION DES SOLS CALCUL ET RENFORCEMENT</strong></p>
+<p> <strong><span style="font-size: 10pt; background-color: #ccffcc;"><u>PROGRAMME</u></span></strong></p>
+<ul>
+<li><strong>P</strong>hénomène <strong>/ C</strong>auses de la<strong> L</strong>iquéfaction<strong>;</strong></li>
+<li><strong>E</strong>valuation du <strong>P</strong>otentiel de <strong>L</strong>iquéfaction à partir des <strong>E</strong>ssais <strong>G</strong>éotecniques;</li>
+<li><strong>A</strong>mélioration / <strong>R</strong>enforcement des Sols <strong><br /></strong></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td width="161">
+<h3 style="text-align: center;"><span style="font-size: 12pt; color: #ffffff; background-color: #ffcc00;"><strong><span style="font-family: tahoma, arial, helvetica, sans-serif;">SEMINAIRE N° 05</span></strong></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GLISSEMENTS DE TERRAIN<br /></strong></p>
+<h5><span style="font-size: 10pt; background-color: #ccffcc;"><u> <strong>PROGRAMME</strong></u></span></h5>
+<ul>
+<li><strong>Dé</strong>finitions et <strong>C</strong>auses;</li>
+<li><strong>I</strong>nvestigations <strong>S</strong>pécifiques et <strong>M</strong>éthodes de <strong>S</strong>urveillance;</li>
+<li><strong>A</strong>nalyse de la<strong> S</strong>tabilité et <strong>T</strong>raitement<strong> N</strong>umérique<strong>;</strong></li>
+<li><strong>T</strong>echnique de <strong>C</strong>onfortement<strong>;</strong></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td width="163">
+<h2 style="text-align: center;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt; background-color: #ffcc00;"><strong> SEMINAIRE N° 06</strong></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong> LES OUVRAGES DE SOUTENEMENT </strong></p>
+<p><strong>  <span style="font-size: 10pt; background-color: #ccffcc;"><u>PROGRAMME</u></span></strong></p>
+<ul>
+<li><strong>C</strong>alcul des <strong>F</strong>orces de <strong>P</strong>oussées des<strong> T</strong>erres;</li>
+<li><strong>L</strong>es<strong> D</strong>ifférents<strong> T</strong>ypes de<strong> M</strong>urs et<strong> P</strong>arois de<strong> S</strong>outènement;</li>
+<li><strong>A</strong>nalyse de la<strong> S</strong>tabilité des<strong> O</strong>uvrages de <strong>S</strong>outènement<strong>;</strong></li>
+<li><strong>D</strong>imensionnement des<strong> O</strong>uvrages de <strong>S</strong>outènement.<strong> <br /></strong></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td width="163">
+<h2 style="text-align: center;"><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12pt; background-color: #ffcc00;"> <strong>SEMINAIRE N° 07</strong></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong> REGLES DE CONCEPTION ET DE CALCUL PARASISMIQUE DES STRUCTURES - R P A</strong></p>
+<p><span style="font-size: 10pt; background-color: #ccffcc;"><strong> </strong></span><strong> <span style="font-size: 10pt; background-color: #ccffcc;"><u> PROGRAMME</u></span></strong></p>
+<ul>
+<li><strong>R</strong>ègles <strong>G</strong>énérales de <strong>C</strong>onception et<strong> C</strong>ritères de<strong> C</strong>lassification;</li>
+</ul>
+<ul>
+<li><strong>R</strong>ègles de <strong>C</strong>alcul et <strong>J</strong>ustification de la<strong> S</strong>écurité;</li>
+<li><strong>D</strong>ispositions<strong> C</strong>onstructives (B.A, Métal, Maçonnerie);</li>
+<li><strong>F</strong>ondations et <strong>M</strong>urs de <strong>S</strong>outènement;</li>
+<li><strong>E</strong>xemples Réels.</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td width="163">
+<h2 style="text-align: center;"><span style="font-size: 12pt; background-color: #ffcc00;"> <span style="font-family: tahoma, arial, helvetica, sans-serif;"><strong>SEMINAIRE N° 08</strong></span></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong> METHODES EXPERIMENTALES EN DYNAMIQUE DES STRUCTURES</strong></p>
+<p><strong>  <span style="font-size: 10pt; background-color: #ccffcc;"><u>PROGRAMME</u></span></strong></p>
+<ul>
+<li><strong>L</strong>es equipements d<strong>'E</strong>ssais <strong>D</strong>ynamiques, <strong>T</strong>able  <strong>V</strong>ibrante et <strong>M</strong>ur de <strong>R</strong>éaction;</li>
+</ul>
+<ul>
+<li><strong>L</strong>ois de<strong> S</strong>imilitudes<strong>: P</strong>assage d'<strong>E</strong>chelle<strong>;</strong></li>
+<li><strong>P</strong>rotocole d<strong>'E</strong>ssai<strong>;</strong></li>
+<li><strong>E</strong>xemples de montage d<strong>'E</strong>ssais <strong>: </strong>sur <strong>T</strong>able <strong>V</strong>ibrante<strong>,</strong><strong>  </strong>sur <strong>M</strong>ur de <strong>R</strong>éaction<strong>;</strong></li>
+<li><strong>T</strong>est in<strong> S</strong>itu sur<strong> B</strong>âti <strong>E</strong>xistant<strong>.</strong><span style="font-size: 14pt; background-color: #ccffcc;"><strong> </strong></span></li>
+</ul>
+<p> </p>
+<table style="height: 77px; margin-left: auto; margin-right: auto;" width="538">
+<tbody>
+<tr>
+<td style="width: 528px; text-align: center;"><span style="font-size: 14pt; background-color: #ffcc00; color: #ffffff;"><strong>ORGANISATION DES SEMINAIRES AU CGS</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"> </p>
+<p>Annuellement et régulièrement le CGS organise une dizaine (10) de séminaires à l’attention des praticiens de la construction et du Génie Parasismique, au sens large.</p>
+<p>Population Ciblée: Ingénieurs et Architectes des:</p>
+<ul>
+<li>Bureaux d’Etudes</li>
+<li>Bureaux de Contrôle      </li>
+<li> Entreprises de Réalisation</li>
+<li>Institution Militaire</li>
+<li>Sociétés d’Assurances</li>
+</ul>
+<p>Etc…..</p>
+<p><strong>Nombre de séminaires organisés entre 1996 et 2019</strong></p>
+<table style="margin-left: auto; margin-right: auto;" border="1" width="559">
+<tbody>
+<tr>
+<td style="width: 452px;">
+<p style="text-align: center;"><strong>THEME</strong></p>
+</td>
+<td style="width: 91px;">
+<p style="text-align: center;"><strong>NOMBRE DE SEMINAIRES</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p>Réglementation  technique</p>
+</td>
+<td style="width: 91px;">
+<p>47</p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p>Géotechnique (Essais, fondations, stabilité pentes,…..)</p>
+</td>
+<td style="width: 91px;">
+<p>35</p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p>Calcul Dynamique des Structures</p>
+</td>
+<td style="width: 91px;">
+<p>14</p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p>Risque sismique (Aléa, microzonage, Urbanisation, aménagement</p>
+</td>
+<td style="width: 91px;">
+<p>23</p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p>Conception Parasismique des Structures</p>
+</td>
+<td style="width: 91px;">
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p> Vulnérabilité, Réhabilitation et Renforcement du Bâti Existant.</p>
+</td>
+<td style="width: 91px;">11</td>
+</tr>
+<tr>
+<td style="width: 452px;">
+<p><strong> Total  Séminaires</strong></p>
+</td>
+<td style="width: 91px;">
+<p><strong>155</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Plus  de  4 500  Participants </strong></p>
+<p><strong> </strong></p>		</div>
+	</div>
+
+				
+
+			</div>
+
+		</div>
+
+		
+
+		
+	</div>
+
+</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 ">
+						<div class="menu-footer">		<div class="moduletable">
+							<h3>بعض منجزات المركز</h3>
+						
+<div style="border: 0px !important;">
+<div id="dj-slideshow17m188" class="dj-slideshow desc-over">
+
+	
+	<div class="dj-slideshow-in">
+		<div class="dj-slides">
+        	
+          				
+				<div class="dj-slide dj-slide-1 dj-active">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-photos_dtr_2.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-photos_dtr_2.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-photos_dtr_2.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-photos_dtr_2.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-photos_dtr_2.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-photos_dtr_2.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-photos_dtr_2.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-photos_dtr_2.jpg 80w" data-sizes="100vw" alt="QUELQUES  DTR" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			QUELQUES  DTR																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-2">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-macro_zonage_rpa_2003.1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-macro_zonage_rpa_2003.1.jpg 80w" data-sizes="100vw" alt="CARTE DE DE MACROZONAGE RPA  2003" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			CARTE DE DE MACROZONAGE RPA  2003																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-3">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-carte_alea_sismique.png"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-carte_alea_sismique.png 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-carte_alea_sismique.png 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-carte_alea_sismique.png 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-carte_alea_sismique.png 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-carte_alea_sismique.png 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-carte_alea_sismique.png 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-carte_alea_sismique.png 80w" data-sizes="100vw" alt="carte d' alea sismique de l'Algérie" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			carte d' alea sismique de l'Algérie																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-4">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-iso_acceleration_500ans.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-iso_acceleration_500ans.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-iso_acceleration_500ans.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-iso_acceleration_500ans.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-iso_acceleration_500ans.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-iso_acceleration_500ans.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-iso_acceleration_500ans.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-iso_acceleration_500ans.jpg 80w" data-sizes="100vw" alt="Carte d'iso accélération 500ans" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Carte d'iso accélération 500ans																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-5">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-boumerdes.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-boumerdes.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-boumerdes.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-boumerdes.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-boumerdes.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-boumerdes.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-boumerdes.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-boumerdes.jpg 80w" data-sizes="100vw" alt="Carte de microzonage de Boumerdes" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Carte de microzonage de Boumerdes																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-6">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-baghlia.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-baghlia.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-baghlia.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-baghlia.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-baghlia.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-baghlia.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-baghlia.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-baghlia.jpg 80w" data-sizes="100vw" alt="Carte de microzonage de Baghlia" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Carte de microzonage de Baghlia																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-7">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-expertise_batiment.1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-expertise_batiment.1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-expertise_batiment.1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-expertise_batiment.1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-expertise_batiment.1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-expertise_batiment.1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-expertise_batiment.1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-expertise_batiment.1.jpg 80w" data-sizes="100vw" alt="expertise d'un  bâtiment administratif" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			expertise d'un  bâtiment administratif																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-8">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-exple_essais_laboratoire.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-exple_essais_laboratoire.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-exple_essais_laboratoire.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-exple_essais_laboratoire.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-exple_essais_laboratoire.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-exple_essais_laboratoire.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-exple_essais_laboratoire.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-exple_essais_laboratoire.jpg 80w" data-sizes="100vw" alt="Exemples d'essais de laboratoire" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Exemples d'essais de laboratoire																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-9">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_gma_pierres_1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_gma_pierres_1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essais_gma_pierres_1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essais_gma_pierres_1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essais_gma_pierres_1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essais_gma_pierres_1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essais_gma_pierres_1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essais_gma_pierres_1.jpg 80w" data-sizes="100vw" alt="ESSAIS SUR PIERRES GMA " class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			ESSAIS SUR PIERRES GMA 																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-10">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_gma_coupleurs_1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_gma_coupleurs_1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essais_gma_coupleurs_1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essais_gma_coupleurs_1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essais_gma_coupleurs_1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essais_gma_coupleurs_1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essais_gma_coupleurs_1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essais_gma_coupleurs_1.jpg 80w" data-sizes="100vw" alt="ESSAI COUPLEURS GMA " class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			ESSAI COUPLEURS GMA 																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-11">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-cooperation_jica_japon.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-cooperation_jica_japon.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-cooperation_jica_japon.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-cooperation_jica_japon.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-cooperation_jica_japon.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-cooperation_jica_japon.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-cooperation_jica_japon.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-cooperation_jica_japon.jpg 80w" data-sizes="100vw" alt="Cooperation JICA (Japon)" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Cooperation JICA (Japon)																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-12">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_jica.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essais_jica.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essais_jica.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essais_jica.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essais_jica.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essais_jica.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essais_jica.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essais_jica.jpg 80w" data-sizes="100vw" alt="ESSAIS JICA" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			ESSAIS JICA																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-13">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet.1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet.1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gradin_5_jullet.1.jpg 80w" data-sizes="100vw" alt="essai gradin 5 jullet" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			essai gradin 5 jullet																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-14">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet_vue.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gradin_5_jullet_vue.jpg 80w" data-sizes="100vw" alt="Essai gradin 5 julllet vue stade" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Essai gradin 5 julllet vue stade																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-15">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gma_coupleurs_2_page_4.jpg 80w" data-sizes="100vw" alt="Essai sur gradins du 5 juillet" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Essai sur gradins du 5 juillet																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-16">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet_1.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradin_5_jullet_1.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gradin_5_jullet_1.jpg 80w" data-sizes="100vw" alt="Essai sur gradins 5 julllet " class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Essai sur gradins 5 julllet 																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-17">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gradins_stade_tizi_ouzou.jpg 80w" data-sizes="100vw" alt="essai_gradins_stade_tizi_ouzou.jpg" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			essai_gradins_stade_tizi_ouzou.jpg																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-18">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gma_coupleurs_2_page_6.jpg 80w" data-sizes="100vw" alt="ESSAI GRADINS TIZI OUZOU" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			ESSAI GRADINS TIZI OUZOU																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+            			
+				<div class="dj-slide dj-slide-19">
+					<div class="dj-slide-in">
+					
+												
+						            			
+						
+<div class="dj-slide-image"><img src="/components/com_djmediatools/assets/images/blank.gif" data-src="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg"  data-srcset="/media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 700w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_480w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 480w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_320w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 320w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_240w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 240w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_160w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 160w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_120w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 120w, /media/djmediatools/cache/17-quelques-realisations-du-cgs-20180808115525/_80w/700x450-crop-90-essai_gma_coupleurs_2_page_7.jpg 80w" data-sizes="100vw" alt="Essai sur panneau en PAF" class="dj-image" width="700" height="450"  /></div>
+						
+													<div class="dj-slide-desc">
+																	<!-- Slide description area: START -->
+					<div class="dj-slide-desc-in">	
+						<div class="dj-slide-desc-bg"></div>
+						<div class="dj-slide-desc-text">
+														
+															<div class="dj-slide-title">
+																			Essai sur panneau en PAF																	</div>
+														
+															<div class="dj-slide-description">
+																																	</div>
+														
+													</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- Slide description area: END -->
+											</div>
+											</div>
+				</div>
+								
+                    	
+        </div>
+        <div class="dj-navigation">
+        	<div class="dj-navigation-in">
+        			        		<a href="#" class="dj-prev showOnMouseOver"><img src="/components/com_djmediatools/layouts/slideshow/images/prev.png" alt="Previous" /></a>
+					<a href="#" class="dj-next showOnMouseOver"><img src="/components/com_djmediatools/layouts/slideshow/images/next.png" alt="Next" /></a>
+													<a href="#" class="dj-play showOnMouseOver"><img src="/components/com_djmediatools/layouts/slideshow/images/play.png" alt="Play" /></a>
+					<a href="#" class="dj-pause showOnMouseOver"><img src="/components/com_djmediatools/layouts/slideshow/images/pause.png" alt="Pause" /></a>
+        					</div>
+		</div>
+				
+		<div class="dj-loader"></div>
+	</div>
+	
+			<div class="dj-indicators ">
+			<div class="dj-indicators-in">
+									<a href="#" class="dj-load-button dj-load-button-active"><span class="dj-key">1</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">2</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">3</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">4</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">5</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">6</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">7</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">8</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">9</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">10</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">11</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">12</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">13</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">14</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">15</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">16</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">17</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">18</span></a>
+									<a href="#" class="dj-load-button"><span class="dj-key">19</span></a>
+							</div>
+        </div>
+	</div>
+<div style="clear: both" class="djslideshow-end"></div>
+</div>		</div>
+			<div class="moduletable">
+							<h3>شبكة أجهزة قياس التسارع الوطنية</h3>
+						
+
+<div class="custom"  >
+	<p style="text-align: right;"><img src="/images/reseau-national-d-accelerographes-final-avec-zone.jpg" alt="" width="140" height="67" /></p>
+<p style="text-align: right;"><a href="/index.php/ar/2026-05-19-11-16-07/355-reseaux" hreflang="ar">شبكة أجهزة قياس التسارع الوطنية</a></p>
+<p style="text-align: right;"> </p>
+<p style="text-align: right;"> </p>
+<p style="text-align: right;"> </p></div>
+		</div>
+	</div>
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="text-footer"></div>
+					</div>
+
+					<div class="col-sm-4 ">
+								<div class="moduletable">
+							<h3>                                NOTRE SIEGE</h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p> </p>
+<p style="text-align: center;"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.2519320449196!2d3.0945799768186877!3d36.73990288877735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad5515c1e31d%3A0x607e40d303e1a9e1!2sCGS%20-%20CENTRE%20NATIONAL%20DE%20RECHERCHE%20APPLIQUEE%20EN%20GENIE%20PARASISMIQUE!5e0!3m2!1sfr!2sdz!4v1712056694554!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p></div>
+		</div>
+			<div class="moduletable">
+							<h3>NOTRE LABORATOIRE </h3>
+						
+
+<div class="custom"  >
+	<p> </p>
+<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102328.66308134266!2d2.891421604218567!3d36.72806737271475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128faf3134f48d3b%3A0xafa6adaf11a6d3ca!2sCGS%2C%20Laboratory!5e0!3m2!1sfr!2sdz!4v1712130920343!5m2!1sfr!2sdz" width="400" height="400" allowfullscreen="allowfullscreen"></iframe></p>
+<p> </p></div>
+		</div>
+	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="resaux-sociaux"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-left">
+						<p>© 2018 - Tous droits réservés - CGS</p>
+					</div>
+
+					<div class="col-md-6 text-right">
+						<p>Conception et Développement : <a href="http://alcomnet.com/" ><b>Alcomnet</b></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
